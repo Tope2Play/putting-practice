@@ -29,8 +29,8 @@ export function History() {
               return (
                 <div class="row" role="button" onClick={() => navigate(`/drill/${d.id}`)}>
                   <div class="row-main">
-                    <div class="row-title">{d.name}</div>
-                    <div class="row-sub">{pm && `${pm.label}: ${formatValue(d, pm, metricValue(d, pm, r))}`}{r.note ? ` · ${r.note}` : ''}</div>
+                    <div class="row-title">{d.name}{r.hard && <span class="tag warm">Hard</span>}</div>
+                    <div class="row-sub">{pm ? `${pm.label}: ${formatValue(d, pm, metricValue(d, pm, r))}` : 'Done'}{r.note ? ` · ${r.note}` : ''}</div>
                   </div>
                   {ok !== null && <span class={'badge ' + (ok ? 'good' : 'bad')}>{ok ? 'Pass' : 'Miss'}</span>}
                 </div>

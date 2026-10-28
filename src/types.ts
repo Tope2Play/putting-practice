@@ -18,6 +18,12 @@ export interface Metric {
   aggregate?: 'sum' | 'avg' | 'best' | 'worst';
   /** Computed metric: sum of other metrics' session values. */
   sumOf?: string[];
+  /** Computed metric: weighted sum of other metrics plus an offset (e.g. 3 × holed + 2 × in zone). */
+  calc?: { terms: { id: string; w: number }[]; offset?: number };
+  /** Step for the +/− buttons on decimal scores (e.g. 0.5 m). */
+  step?: number;
+  /** Show an explicit + sign (e.g. strokes gained). */
+  signed?: boolean;
   /** Reference value; the difference is shown next to the score (e.g. vs par / Tour). */
   par?: number;
   targets?: Partial<Record<Level, number>>;
@@ -26,6 +32,8 @@ export interface Metric {
 export interface Drill {
   id: string;
   number?: number;
+  /** Short code from the library, e.g. G1 */
+  code?: string;
   name: string;
   discipline: Discipline;
   category: string;
@@ -37,6 +45,10 @@ export interface Drill {
   metrics: Metric[];
   /** Full instructions in Markdown. */
   content: string;
+  /** Harder variant, logged with a "Hard mode" flag. */
+  hardMode?: string;
+  /** Random target caller shown during the drill (e.g. Distance Call). */
+  caller?: { label: string; options: string[] };
   builtin?: boolean;
 }
 
@@ -50,7 +62,17 @@ export interface Result {
   level: Level;
   note?: string;
   sessionId?: string;
+  /** Played the harder variant; kept out of high scores and pass streaks. */
+  hard?: boolean;
+  speed?: GreenSpeed;
 }
+
+export type GreenSpeed = 'slow' | 'medium' | 'fast';
+export const SPEEDS: { id: GreenSpeed; label: string }[] = [
+  { id: 'slow', label: 'Slow' },
+  { id: 'medium', label: 'Medium' },
+  { id: 'fast', label: 'Fast' },
+];
 
 export interface Session {
   id: string;

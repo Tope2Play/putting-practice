@@ -2,15 +2,26 @@ import type { Drill, Level, Metric, Result } from './types';
 
 const round1 = (n: number) => Math.round(n * 10) / 10;
 
-/** The session value of one metric: rounds combined by its aggregate, or the sum of other metrics. */
+export const isComputed = (m: Metric) => !!(m.sumOf || m.calc);
+
+function calcOf(m: Metric) {
+  return m.calc ?? { terms: (m.sumOf ?? []).map((id) => ({ id, w: 1 })), offset: 0 };
+}
+
+/**
+ * The session value of one metric: rounds combined by its aggregate, or for computed metrics the
+ * weighted sum of other metrics. Blank parts count as 0 once at least one part is entered.
+ */
 export function metricValue(drill: Drill, metric: Metric, result: Result): number | undefined {
-  if (metric.sumOf) {
-    const parts = metric.sumOf.map((id) => {
+  if (isComputed(metric)) {
+    const { terms, offset = 0 } = calcOf(metric);
+    const parts = terms.map(({ id, w }) => {
       const m = drill.metrics.find((x) => x.id === id);
-      return m ? metricValue(drill, m, result) : undefined;
+      const v = m ? metricValue(drill, m, result) : undefined;
+      return v === undefined ? undefined : v * w;
     });
-    if (parts.some((p) => p === undefined)) return undefined;
-    return (parts as number[]).reduce((a, b) => a + b, 0);
+    if (parts.every((p) => p === undefined)) return undefined;
+    return round1(parts.reduce((a: number, b) => a + (b ?? 0), offset));
   }
   const vals = (result.values[metric.id] ?? []).filter((v) => Number.isFinite(v));
   if (!vals.length) return undefined;
@@ -30,7 +41,7 @@ export function metricValue(drill: Drill, metric: Metric, result: Result): numbe
 /** Max for the session value, taking rounds into account (e.g. 2 rounds of 10 summed = 20). */
 export function metricMax(drill: Drill, metric: Metric): number | undefined {
   if (metric.max === undefined) return undefined;
-  if (metric.sumOf) return metric.max;
+  if (isComputed(metric)) return metric.max;
   const agg = metric.aggregate ?? 'sum';
   return agg === 'sum' ? metric.max * Math.max(1, drill.rounds) : metric.max;
 }
@@ -67,7 +78,7 @@ export function formatValue(drill: Drill, metric: Metric, value: number | undefi
   if (value === undefined) return '–';
   if (metric.kind === 'boolean') return value ? 'Yes' : 'No';
   const max = metricMax(drill, metric);
-  const v = String(round1(value));
+  const v = (metric.signed && value > 0 ? '+' : '') + String(round1(value)).replace('-', '−');
   if (metric.unit === '%') return `${v}%`;
   if (max !== undefined) return `${v}/${max}`;
   return metric.unit ? `${v} ${metric.unit}` : v;
@@ -107,8 +118,10 @@ export interface DrillStats {
   passCount: number;
 }
 
+/** Hard-mode results are listed in history but kept out of high scores and pass streaks. */
 export function drillStats(drill: Drill, results: Result[], level: Level): DrillStats {
-  const rs = drillResults(results, drill.id);
+  const all = drillResults(results, drill.id);
+  const rs = all.filter((r) => !r.hard);
   const pm = primaryMetric(drill);
   let best: DrillStats['best'];
   if (pm && pm.better !== 'none') {
@@ -120,12 +133,13 @@ export function drillStats(drill: Drill, results: Result[], level: Level): Drill
   let passStreak = 0;
   for (let i = rs.length - 1; i >= 0 && passed(drill, rs[i], level); i--) passStreak++;
   const passCount = rs.filter((r) => passed(drill, r, level)).length;
-  return { count: rs.length, last: rs[rs.length - 1], best, passStreak, passCount };
+  return { count: all.length, last: all[all.length - 1], best, passStreak, passCount };
 }
 
 /** Metrics on which this result set a new personal best (compared to earlier results). */
 export function newBests(drill: Drill, results: Result[], result: Result): Metric[] {
-  const earlier = results.filter((r) => r.drillId === drill.id && r.id !== result.id && r.date < result.date);
+  if (result.hard) return [];
+  const earlier = results.filter((r) => r.drillId === drill.id && r.id !== result.id && r.date < result.date && !r.hard);
   if (!earlier.length) return [];
   return drill.metrics.filter((m) => {
     if (m.better === 'none' || m.kind === 'boolean') return false;

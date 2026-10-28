@@ -27,12 +27,18 @@ function load(): AppData {
   }
 }
 
-/** Adds built-in drills shipped in a newer app version, without touching the user's edited copies. */
+/**
+ * Brings a stored library up to the shipped version: adds new built-in drills and drops built-ins
+ * the library no longer has (kept if you logged results on them). Your own drills are untouched.
+ */
 function mergeLibrary(data: AppData): AppData {
   if (data.libraryVersion >= library.version) return data;
-  const have = new Set(data.drills.map((d) => d.id));
+  const shipped = new Set(builtinDrills.map((d) => d.id));
+  const used = new Set(data.results.map((r) => r.drillId));
+  const kept = data.drills.filter((d) => !d.builtin || shipped.has(d.id) || used.has(d.id));
+  const have = new Set(kept.map((d) => d.id));
   const added = builtinDrills.filter((d) => !have.has(d.id) && !data.removedBuiltins.includes(d.id));
-  return { ...data, drills: [...data.drills, ...structuredClone(added)], libraryVersion: library.version };
+  return { ...data, drills: [...kept, ...structuredClone(added)], libraryVersion: library.version };
 }
 
 let state: AppData = load();

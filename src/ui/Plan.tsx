@@ -19,7 +19,7 @@ export function Plan() {
   const [adding, setAdding] = useState(false);
 
   const total = plan.reduce((a, d) => a + d.minutes, 0);
-  const cats = [...new Set(data.drills.map((d) => d.category))];
+  const cats = [...new Set(data.drills.filter((d) => !d.warmup).map((d) => d.category))];
   const hasChipping = data.drills.some((d) => d.discipline === 'chipping');
   const set = (patch: Partial<PlanOptions>) => setOpts((o) => ({ ...o, ...patch }));
   const toggleCat = (c: string) =>
@@ -48,7 +48,7 @@ export function Plan() {
 
       <label class="toggle">
         <input type="checkbox" checked={opts.warmup} onChange={(e) => set({ warmup: (e.target as HTMLInputElement).checked })} />
-        <span>Start with a warm-up (up to {warmupBudget(opts.minutes)} min)</span>
+        <span>Start with a warm-up {warmupBudget(opts.minutes) ? `(up to ${warmupBudget(opts.minutes)} min)` : '(needs 15+ min)'}</span>
       </label>
 
       {hasChipping && (

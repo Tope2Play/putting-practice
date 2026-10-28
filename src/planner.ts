@@ -28,8 +28,9 @@ function byLibraryOrder(drills: Drill[], all: Drill[]) {
   return [...drills].sort((a, b) => (idx.get(a.id) ?? 0) - (idx.get(b.id) ?? 0));
 }
 
+/** Full warm-up (both stations, 15 min) from 30 minutes; one station for shorter sessions. */
 export function warmupBudget(minutes: number) {
-  return Math.min(15, Math.max(5, Math.round((minutes * 0.25) / 5) * 5));
+  return minutes >= 30 ? 15 : minutes >= 15 ? 8 : 0;
 }
 
 export function planSession(data: AppData, opts: PlanOptions): Drill[] {
@@ -54,7 +55,7 @@ export function planSession(data: AppData, opts: PlanOptions): Drill[] {
 
   const inFocus = (d: Drill) => !opts.categories.length || opts.categories.includes(d.category);
   const main: Drill[] = [];
-  const rest = ranked(pool.filter((d) => !warm.includes(d) && inFocus(d) && !(opts.warmup && d.warmup)));
+  const rest = ranked(pool.filter((d) => !d.warmup && inFocus(d)));
   // First pass: one drill per category for variety; second pass: fill remaining time.
   for (const pass of [0, 1]) {
     for (const d of rest) {

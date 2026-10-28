@@ -1,430 +1,356 @@
 {
- "version": 1,
- "guide": "## How to use this library\n\n25 drills in 8 categories, all set up on an outdoor practice green, all distances in meters. Every benchmark below is anchored to PGA Tour ShotLink data, converted from feet (1 ft = 0.305 m).\n\n**General setup rules for every drill**\n\n- **Straight putt:** a putt that holes when aimed at the centre of the cup. Find one by rolling a ball gently along the ground from 1 m with your hand; if it tracks straight, the line is flat enough (< 1% side slope).\n- **Measuring:** one putter length ≈ 0.85–0.90 m; one heel-to-toe step ≈ 0.30 m. Measure your own putter and stride once and write the numbers down.\n- **Tees:** push tees fully into the green so the putter never catches them; on a public practice green use coins or ball markers where tees are not allowed.\n- **Scoring:** log every score. A drill without a recorded number is a warm-up, not training.\n- **Tiers:** Beginner/mid-handicap ≈ 15–28 HCP; Low single digit ≈ 0–5 HCP; Tour = PGA/DP World Tour level.\n\n**Diagram legend (used in every drill)**\n\n```text\nO   = hole              •  = ball             |  = tee (gate post)\nT   = single tee marker ---- = alignment stick  :  = string line / chalk line\n→   = putt direction    #  = towel / zone edge   ×  = coin / ball marker\n⟋⟍  = slope arrow (falls toward the low side, labelled LOW)\n```\n\n## Reference benchmarks: PGA Tour make % by distance\n\n| Distance (m) | Distance (ft) | Tour make % | Tour 3-putt % |\n| --- | --- | --- | --- |\n| 0.9 | 3 | 99.4 | \\~0 |\n| 1.2 | 4 | 91.4 | \\~0 |\n| 1.5 | 5 | 80.7 | 0.1 (inside 1.5 m) |\n| 1.8 | 6 | 70.2 | 0.4 (1.5–3 m) |\n| 2.1 | 7 | 60.6 | 0.4 |\n| 2.4 | 8 | 52.9 | 0.4 |\n| 2.7 | 9 | 46.4 | 0.4 |\n| 3.0 | 10 | \\~41 | 0.4 |\n| 3.4–4.6 | 11–15 | 30.1 | < 1 |\n| 4.6–6.1 | 15–20 | 18.3 | 1.5 |\n| 6.1–7.6 | 20–25 | 12.5 | 2.3 |\n| 7.6+ | 25+ | 5.5 | 9.6 |\n\nKey facts the drill benchmarks are built on:\n\n- Tour players hit the 50/50 make point at about **2.4 m**; most amateurs reach it at about 1.5 m.\n- Tour average leave on lag putts (\"Approach Putt Performance\") is about **0.7 m**.\n- From 7.6 m+, Tour players 3-putt \\~9.5% of the time; Arccos data puts 1–5 handicaps at \\~19.6% and 6–15 handicaps at \\~26–27%.\n- From inside 0.9 m, Shot Scope data shows scratch players at 98%, 10 handicaps at 96%, 20 handicaps at 90%.\n\nSources: [GOLF.com – Tour make % by distance](https://golf.com/instruction/putting/pga-tour-putting-make-percentages-distance/), [GOLF.com – 3-putt rates 2021](https://golf.com/instruction/putting/how-often-pros-3-putt-pga-tour-stats-2021/), [MyGolfSpy – Pros vs Joes 3-putts](https://mygolfspy.com/labs/pros-vs-joes-3-putts/), [GolfTEC – Tour putting averages](https://scramble.golftec.com/blog/2017/09/golf-stats-pga-tour-putting-averages/), [First Call Golf – Shot Scope short-putt data](https://www.firstcallgolf.com/industry-news/release/2025-11-21/the-thrill-of-draining-bombs-and-the-agony-of-short-misses).\n\n\n\n\n\n\n\n\n\n## Sample weekly plan\n\nThree sessions a week of 50–60 minutes cover all 8 categories; Drill 25 runs before every round. Every second week, swap in the alternates so no drill goes stale.\n\n| Session | Focus | Drills (minutes) | Alternates (every 2nd week) |\n| --- | --- | --- | --- |\n| A | Setup, start line, strike | 1 (5) → 2 (10) → 4 (10) → 7 (10) → 20 (15) | 3 for 1 · 6 for 4 · 8 for 7 |\n| B | Speed and lag | 9 (10) → 10 (15) → 13 (10) → 14 (15) → 22 (10) | 11 for 9 · 12 for 13 · 16 for 14 |\n| C | Reading, routine, scoring | 17 (10) → 19 (10) → 5 (10) → 23 (10) → 24 (20) | 18 for 19 · 21 for 5 · 15 for 24 |\n| Before every round | Calibration | 25 (10) | — |\n\n**Monthly test day:** Drills 2, 4, 8, 15, 16, 21 and 24, scored and logged. These seven give one number each for aim, start line, strike, 3-putts, lag proximity, short putts and overall scoring, so you can see which category is costing strokes and shift session time toward it.\n\n## Sources\n\n- [GOLF.com — PGA Tour make % by distance](https://golf.com/instruction/putting/pga-tour-putting-make-percentages-distance/)\n- [GOLF.com — How often pros 3-putt (2021)](https://golf.com/instruction/putting/how-often-pros-3-putt-pga-tour-stats-2021/)\n- [MyGolfSpy — Pros vs Joes: 3-putts (Arccos data)](https://mygolfspy.com/labs/pros-vs-joes-3-putts/)\n- [GolfTEC — PGA Tour putting averages](https://scramble.golftec.com/blog/2017/09/golf-stats-pga-tour-putting-averages/)\n- [First Call Golf — Shot Scope short-putt data](https://www.firstcallgolf.com/industry-news/release/2025-11-21/the-thrill-of-draining-bombs-and-the-agony-of-short-misses)\n- [PGA — Realistic lag-putting expectations (Lou Stagner data)](https://www.pga.info/discover/latest/news/why-setting-realistic-expectations-lag-putting-key-shooting-lower-scores/)\n- [DP World Tour — Practise your putting at home with Phil Kenyon](https://europeantour.com/dpworld-tour/news/articles/detail/practise-your-putting-at-home-with-master-pga-professional-phil-kenyon)\n- [Today's Golfer — Phil Kenyon drills](https://todays-golfer.com/super-coaches/phil-kenyon)\n- [Golf Digest — Tiger Woods' gate drill](https://www.golfdigest.com/story/tiger-woods-putting-drill-gate-two-tees)\n- [Australian Golf Digest — Gate drill drawbacks](https://www.australiangolfdigest.com.au/tee-gate-drill-drawbacks-tiger-woods-putting-stroke/)\n- [GOLF.com — Tiger Woods' warm-up, minute by minute](https://golf.com/instruction/short-game/tiger-woods-warm-up-practice-routine/)\n- [GolfMagic — Tiger Woods' putting drill and mirror](https://www.golfmagic.com/putting/why-you-should-consider-using-tiger-woods-putting-drill)\n- [GOLF.com — Dave Pelz's 10 truths about putting](https://golf.com/instruction/dave-pelzs-10-truths-about-putting/)\n- [Pelz / SYNLawn — Elements of Practice: 20-foot putt game](https://synlawngolf.com/wp-content/uploads/2024/07/eop03.pdf)\n- [Golf Digest — Butch Harmon: Phil's favourite lag drill](https://www.golfdigest.com/story/harmon_gd0805)\n- [Golf Digest — 3 tour secrets (Mickelson 3-in-a-row lag)](https://www.golfdigest.com/story/3-tour-secrets-thatll-get-you-making-putts)\n- [GOLF.com — Mickelson's key to 3-footers](https://golf.com/instruction/phil-mickelson-key-3-footer-play-smart/)\n- [Golf Compendium — Circle putting drills (Jackie Burke origin)](https://golfcompendium.com/2023/01/circle-putting-drills.html)\n- [USA Today via Yahoo — What is AimPoint Express?](https://ca.sports.yahoo.com/news/aimpoint-express-why-many-pga-212108528.html)\n- [GolfMagic — Putting the Stockton way](https://www.golfmagic.com/instruction/putting/putting-learn-the-stockton-way/9031)\n- [Golf Digest — Dave Stockton green-reading tips](https://www.golfdigest.com/story/dave-stockton-green-reading-tips)\n\nBenchmarks without a cited source (most Beginner and Low-single-digit tiers, and Tour tiers for drills without Tour data) are coaching targets calibrated against the Tour and amateur figures above, not published statistics.",
+ "version": 2,
+ "guide": "A 15-minute warm-up of two unscored drills, then 15 games. Each game has a fixed setup, produces one number, and carries Tour-anchored targets, so scores compare across sessions, greens and players.\n\n## Rules that make scores comparable\n\n- **Fixed setup:** distances, gate widths and zone sizes are fixed per game. A score only counts on a leaderboard if the setup was exactly as written; any variant is logged as \"Hard mode\" or \"Custom\".\n- **Slope class:** every game names one. Flat = side slope < 1% (a ball rolled by hand from 1 m tracks straight); Breaking = 1–2.5%; Steep = > 2.5%. Log the class with the score.\n- **Green speed:** log Slow (Stimp < 9), Medium (9–11) or Fast (> 11), from the club or your own judgement. Compare scores within the same speed band.\n- **Measuring:** from the hole centre (or target tee centre) with a tape. Putter lengths are fine for setup, not for scoring.\n- **One attempt per ball, no gimmes, full routine.** Re-putts never count.\n- **Targets** are given for three levels: Beginner / mid-handicap (≈ 15–28), Low single digit (≈ 0–5) and Tour. Tour targets are anchored to PGA Tour ShotLink make % and 3-putt rates; the other levels are coaching targets.\n- **Diagram legend:** O = hole · • = ball · | = tee (gate post) · T = tee marker · ---- = alignment stick · → = putt direction.\n\n## All 15 games at a glance\n\n| # | Game | Skill | Time (min) | Score | Range | Better |\n| --- | --- | --- | --- | --- | --- | --- |\n| 1 | Gate Master | Start line | 8 | Points | 0–40 | Higher |\n| 2 | Sweet Spot | Strike | 8 | Points | 0–20 | Higher |\n| 3 | Circle Streak | Short putts | 15 | Best streak | 0–100 | Higher |\n| 4 | Step-Back Survival | Pressure | 8 | Farthest holed (m) | 0–6.0 | Higher |\n| 5 | Short-Putt SG | Short putts | 8 | Strokes gained vs Tour | −7.1 to +2.9 | Higher |\n| 6 | Never Short | Speed | 6 | Points | 0–30 | Higher |\n| 7 | Leapfrog | Speed | 8 | Balls placed | 0–18 | Higher |\n| 8 | Distance Call | Speed | 10 | Points | 0–36 | Higher |\n| 9 | Up & Down | Speed on slopes | 10 | Points | 0–24 | Higher |\n| 10 | Blind Feel | Feel | 10 | Points | 0–40 | Higher |\n| 11 | Lag Darts | Lag | 10 | Points | 0–45 | Higher |\n| 12 | Lag Ladder | Lag under pressure | 10–20 | Balls used | 9–75 | Lower |\n| 13 | Slope Sense | Reading | 8 | Points | 0–24 | Higher |\n| 14 | Fall-Line Clock | Reading + short putts | 10 | Makes | 0–16 | Higher |\n| 15 | Putting Round | Scoring | 20 | Putts | 18+ | Lower |\n\n## Sources\n\n- [GOLF.com — PGA Tour make % by distance](https://golf.com/instruction/putting/pga-tour-putting-make-percentages-distance/)\n- [GolfTEC — PGA Tour putting averages (lag leave ≈ 0.7 m)](https://scramble.golftec.com/blog/2017/09/golf-stats-pga-tour-putting-averages/)\n- [GOLF.com — Mickelson's 3-ft circle drill](https://golf.com/instruction/phil-mickelson-key-3-footer-play-smart/)\n- [Golf Digest — Butch Harmon on Mickelson's lag drill](https://www.golfdigest.com/story/harmon_gd0805)\n- [Golf Digest — Mickelson 3-in-a-row lag version](https://www.golfdigest.com/story/3-tour-secrets-thatll-get-you-making-putts)\n- [GOLF.com — Dave Pelz's 10 truths about putting](https://golf.com/instruction/dave-pelzs-10-truths-about-putting/)\n- [USA Today via Yahoo — AimPoint Express](https://ca.sports.yahoo.com/news/aimpoint-express-why-many-pga-212108528.html)\n\nTargets without a cited figure (most Beginner and Low-single-digit levels) are coaching targets set against these Tour and amateur numbers.",
  "drills": [
   {
-   "id": "putt-01-mirror-setup-check",
+   "id": "w1-setup-alignment-station",
    "number": 1,
-   "name": "Mirror Setup Check",
+   "code": "W1",
+   "name": "Setup & Alignment Station",
    "discipline": "putting",
-   "category": "Setup & Alignment",
-   "minutes": 5,
+   "category": "Warm-up",
+   "minutes": 7,
    "warmup": true,
-   "rounds": 2,
-   "summary": "Identical eye position, shoulder line and face angle at every address. If the eyes or shoulders move from setup to setup, the line looks different each time and aim drifts.",
-   "equipment": "1 putter · 6 balls · 1 putting mirror (≈30 × 15 cm, with eye template, shoulder line and ball cut-out) · 2 tees.",
-   "metrics": [
-    {
-     "id": "points",
-     "label": "Setup points",
-     "kind": "count",
-     "max": 30,
-     "better": "higher",
-     "aggregate": "worst",
-     "targets": {
-      "beginner": 21,
-      "low": 26,
-      "tour": 29
-     }
-    }
-   ],
-   "content": "**Origin:** Common tour/coaching drill. Tiger Woods has been reported using an EyeLine putting mirror in tournament warm-ups ([GolfMagic](https://www.golfmagic.com/putting/why-you-should-consider-using-tiger-woods-putting-drill)).\n\n**What it trains:** Identical eye position, shoulder line and face angle at every address. If the eyes or shoulders move from setup to setup, the line looks different each time and aim drifts.\n\n**Equipment:** 1 putter · 6 balls · 1 putting mirror (≈30 × 15 cm, with eye template, shoulder line and ball cut-out) · 2 tees.\n\n**Setup:**\n\n- Flat, straight putt of 1.5 m.\n- Lay the mirror flat with its centre line pointing at the centre of the hole. Sight it from behind and push one tee in front of and one behind the mirror on that line so it cannot rotate.\n- Ball sits in the mirror's ball cut-out.\n\n**Procedure:**\n\n1. Walk in from behind the ball with your normal routine and set up.\n2. Without moving your head, check three things: (a) both pupils sit on the mirror's centre line or inside the eye template, (b) your shoulders are parallel to the mirror's shoulder line, (c) the putter face is square to the mirror's cross-line.\n3. Score 1 point per check that is correct **before** any adjustment. Then putt the ball.\n4. Step out completely and repeat. 10 setups per round, 2 rounds.\n\n**Success criteria:** 3 points per setup, 30 per round.\n\n- Beginner / mid-handicap: ≥ 21/30\n- Low single digit: ≥ 26/30\n- Tour level: ≥ 29/30\n- **Pass** = tier score in both rounds. Progress after 2 passing sessions.\n\n**Progressions & regressions:**\n\n- Harder: close your eyes during the walk-in and open them only for the check; do it on a 3 m breaking putt (mirror aimed at the aim point, not the hole).\n- Easier: score eyes only (10 points per round), then add shoulders, then face.\n\n**Common mistakes:**\n\n- Nudging the head or putter during the check and scoring the corrected position.\n- Mirror not aimed precisely at the hole, so every \"square\" reading is wrong.\n- Looking at the mirror while setting up instead of after; the drill only measures if setup is done blind to the feedback.\n\n**Diagram:**\n\n```text\n        T                                    \n   ┌─────────────────┐                        \n   │  eye template   │                        \n   │ ═══ ( • ) ═══   │ ───────── 1.5 m ─────────▶  O\n   │ shoulder line   │                        \n   └─────────────────┘                        \n        T      (tees front/back lock the mirror's centre line on the hole)\n```",
+   "rounds": 1,
+   "summary": "Unscored warm-up station.",
+   "equipment": "1 putter · 3 balls · 1 alignment stick · 3 tees · optional putting mirror.",
+   "metrics": [],
+   "content": "**Equipment:** 1 putter · 3 balls · 1 alignment stick · 3 tees · optional putting mirror.\n\n**Setup:**\n\n- Flat, straight putt of 2.0 m.\n- Alignment stick on the ground parallel to the target line, 15 cm beyond the ball (far side).\n- Tee at the ball position.\n- Start gate: 2 tees 0.3 m in front of the ball, 6.0 cm inner gap, centred on the line to the hole.\n\n**Procedure:**\n\n1. Minutes 0–3 — five setup checks. Walk in with your routine and set up. Then check: eyes over the line (hold a ball at the bridge of your nose and drop it — it should land on or just inside the ball), feet and shoulders parallel to the stick, putter face square to the stick. Step out fully between checks.\n2. Minutes 3–7 — 10 putts through the gate with full routine, at the speed that would finish 0.4 m past if missed. Watch the start line only; ignore whether it holes.\n\n**Diagram:**\n\n```text\n   ------------------------------------------------  stick, 15 cm beyond ball line\n                  |\n        T•  ─0.3 m─▶    ─────────── 1.7 m ───────────▶  O\n                  |   gate 6.0 cm\n        |←──────────────── 2.0 m ─────────────────→|\n```",
    "builtin": true
   },
   {
-   "id": "putt-02-face-aim-calibration-set-square-test",
+   "id": "w2-stroke-speed-primer",
    "number": 2,
-   "name": "Face-Aim Calibration (Set-Square Test)",
+   "code": "W2",
+   "name": "Stroke & Speed Primer",
    "discipline": "putting",
-   "category": "Setup & Alignment",
-   "minutes": 10,
-   "warmup": false,
-   "rounds": 1,
-   "summary": "Whether the putter face points where you think it does at address. At 3 m, 1° of face error moves the aim 5.2 cm, roughly one hole radius (5.4 cm), so an unnoticed 1° bias costs makes before the stroke starts.",
-   "equipment": "1 putter · 1 ball · 1 small carpenter's set square (arm ≥ 30 cm) · 1 alignment stick (≥ 1 m) · 2 tees · 1 tape measure (≥ 3 m) · pen and card.",
-   "metrics": [
-    {
-     "id": "error",
-     "label": "Avg aim error",
-     "kind": "number",
-     "unit": "cm",
-     "better": "lower",
-     "targets": {
-      "beginner": 8,
-      "low": 5,
-      "tour": 3
-     }
-    },
-    {
-     "id": "bias",
-     "label": "Bias (− left / + right)",
-     "kind": "number",
-     "unit": "cm",
-     "better": "none"
-    }
-   ],
-   "content": "**Origin:** Common tour/coaching drill.\n\n**What it trains:** Whether the putter face points where you think it does at address. At 3 m, 1° of face error moves the aim 5.2 cm, roughly one hole radius (5.4 cm), so an unnoticed 1° bias costs makes before the stroke starts.\n\n**Equipment:** 1 putter · 1 ball · 1 small carpenter's set square (arm ≥ 30 cm) · 1 alignment stick (≥ 1 m) · 2 tees · 1 tape measure (≥ 3 m) · pen and card.\n\n**Setup:**\n\n- Flat, straight putt of 3.0 m.\n- Tee marking the ball position.\n\n**Procedure:**\n\n1. Set up normally and aim the face at the centre of the hole. Do not putt.\n2. Keep the putter still with one hand. With the other hand place the set square flush against the face (short arm against the face, long arm pointing toward the hole).\n3. Lay the alignment stick on the ground against the long arm. Step away; the putter can come out now.\n4. Crouch behind the stick, sight along it and push a tee in where its line reaches the hole's distance (3.0 m).\n5. Measure the distance from that tee to the hole centre. Record it with sign (L or R).\n6. 10 setups per session, stepping out completely between each.\n\n**Success criteria:** Average absolute aim error over 10 setups, plus bias (average signed error).\n\n- Beginner / mid-handicap: average ≤ 8 cm, no setup > 10.8 cm (one hole width)\n- Low single digit: average ≤ 5 cm (≈ 1°)\n- Tour level: average ≤ 3 cm (≈ 0.5°)\n- **Pass** = tier target in 2 consecutive sessions. A bias ≥ 3 cm to one side means change aim routine or putter look before working on stroke.\n\n**Progressions & regressions:**\n\n- Harder: 4.5 m; breaking putt aimed at a tee aim point; aim within a 10-second routine.\n- Easier: 1.5 m (1° = 2.6 cm, so halve the targets); take extra time to aim.\n\n**Common mistakes:**\n\n- Correcting the face while fitting the set square — record the first position only.\n- Square not flush across the face centre (a gap at toe or heel adds 1–2° of fake error).\n- Testing once and drawing conclusions; aim varies, 10 samples are the minimum.\n\n**Diagram:**\n\n```text\n  putter face\n     ▌•                                                   T  ← tee where stick line\n     ▌┐set square                                         ↕     reaches 3.0 m\n     ▌└──── alignment stick (1 m) ─ ─ ─ sight line ─ ─ ─▶ ↕ e = aim error (cm, L/R)\n                                                          O  hole centre\n     |←──────────────────────── 3.0 m ───────────────────→|\n```",
-   "builtin": true
-  },
-  {
-   "id": "putt-03-setup-fingerprint-feet-ball-position",
-   "number": 3,
-   "name": "Setup Fingerprint (Feet & Ball Position)",
-   "discipline": "putting",
-   "category": "Setup & Alignment",
-   "minutes": 10,
-   "warmup": false,
-   "rounds": 1,
-   "summary": "Repeatable ball position, distance from the ball and stance line, whatever stance style you use. Ball position changes launch and strike; stance-line changes shift where the eyes and shoulders end up.",
-   "equipment": "1 putter · 1 ball · 2 alignment sticks · 3 tees · 1 tape measure · pen and card.",
-   "metrics": [
-    {
-     "id": "toe",
-     "label": "Ball-to-toe range",
-     "kind": "number",
-     "unit": "cm",
-     "better": "lower",
-     "targets": {
-      "beginner": 5,
-      "low": 3,
-      "tour": 2
-     }
-    },
-    {
-     "id": "angle",
-     "label": "Stance-angle range",
-     "kind": "number",
-     "unit": "cm",
-     "better": "lower",
-     "targets": {
-      "beginner": 3,
-      "low": 2,
-      "tour": 1
-     }
-    },
-    {
-     "id": "pos",
-     "label": "Ball-position range",
-     "kind": "number",
-     "unit": "cm",
-     "better": "lower",
-     "targets": {
-      "beginner": 5,
-      "low": 3,
-      "tour": 2
-     }
-    }
-   ],
-   "content": "**Origin:** Common tour/coaching drill.\n\n**What it trains:** Repeatable ball position, distance from the ball and stance line, whatever stance style you use. Ball position changes launch and strike; stance-line changes shift where the eyes and shoulders end up.\n\n**Equipment:** 1 putter · 1 ball · 2 alignment sticks · 3 tees · 1 tape measure · pen and card.\n\n**Setup:**\n\n- Flat, straight putt of 2.0 m.\n- Stick A on the ground parallel to the target line, 15 cm beyond the ball (far side), as a fixed reference.\n- Tee at the ball position.\n\n**Procedure:**\n\n1. Set up with your full routine.\n2. Hold the stance. Push one tee in at the tip of your lead toe and one at the tip of your trail toe.\n3. Step out. Lay stick B across the two toe tees.\n4. Measure and record three numbers:\n   1. Ball to toe line: ball centre to stick B, at right angles.\n   2. Stance angle: distance from stick A to stick B at the lead-toe tee minus the same at the trail-toe tee (0 = parallel; positive = open).\n   3. Ball position: distance along the line from the lead-toe tee to the ball centre.\n5. Remove toe tees and stick B. 10 setups per session.\n\n**Success criteria:** Range (largest minus smallest) of each number across 10 setups.\n\n- Beginner / mid-handicap: ball-to-toe ≤ 5 cm · stance angle ≤ 3 cm · ball position ≤ 5 cm\n- Low single digit: ≤ 3 cm · ≤ 2 cm · ≤ 3 cm\n- Tour level: ≤ 2 cm · ≤ 1 cm · ≤ 2 cm\n- **Pass** = all three within tier range. Progress after 2 passing sessions.\n\n**Progressions & regressions:**\n\n- Harder: alternate a 1 m and a 10 m putt each rep (players often move the ball on long putts); add a breaking putt.\n- Easier: measure ball position only; use a tee permanently at your target ball position for the first 5 reps.\n\n**Common mistakes:**\n\n- Shuffling the feet after pushing in the toe tees.\n- Judging \"the same\" by eye instead of the tape — the drill exists because feel is unreliable here.\n- Chasing a textbook stance; the target is your own consistency, not square or open.\n\n**Diagram:**\n\n```text\n   ---------------------------------------- A  (15 cm beyond ball, parallel to line)\n                    •  ───────── 2.0 m ─────────▶  O\n        ↕ ball-to-toe              \n   T(trail toe)----------------T(lead toe) B  (stick across toe tees)\n                 |←── ball position ──→|\n```",
-   "builtin": true
-  },
-  {
-   "id": "putt-04-start-line-gate-test",
-   "number": 4,
-   "name": "Start-Line Gate Test",
-   "discipline": "putting",
-   "category": "Start Line",
-   "minutes": 10,
+   "category": "Warm-up",
+   "minutes": 8,
    "warmup": true,
-   "rounds": 2,
-   "summary": "Starting the ball on the chosen line. Kenyon rates start line the most important putting skill; a poor start line forces compensations in read and speed ([Today's Golfer](https://todays-golfer.com/super-coaches/phil-kenyon)).",
-   "equipment": "1 putter · 10 balls · 3 tees · 1 tape measure.",
+   "rounds": 1,
+   "summary": "Unscored warm-up station.",
+   "equipment": "1 putter · 3 balls · 8 tees.",
+   "metrics": [],
+   "content": "**Equipment:** 1 putter · 3 balls · 8 tees.\n\n**Setup:**\n\n- Head gate: flat 1.2 m putt; one tee 5 mm outside the heel and one 5 mm outside the toe of the putter, level with the ball.\n- Stroke-length markers on an open line with 12 m clear: tees 10 cm outside the toe line at 25 cm behind and 25 cm in front of the ball.\n- Two lag targets: a hole (or tee) at 10 m and at 15 m.\n\n**Procedure:**\n\n1. Minutes 0–3 — head gate: 10 putts trail hand only, then 10 with both hands. The putter must pass the tees without touching.\n2. Minutes 3–5 — rhythm: 6 putts with the 25 cm back / 25 cm through stroke, no target. Same rhythm every time; notice how far the ball rolls on today's green.\n3. Minutes 5–8 — speed read: 3 balls to the 10 m target, 3 balls to the 15 m target, one uphill and one downhill if possible. Finish with one 1 m putt holed.\n\n**Diagram:**\n\n```text\n   Head gate (1.2 m)           Rhythm (no target)               Lag targets\n   |[═ putter ═]|              T        •        T              • ── 10 m ──▶ O\n   |     •      | ──▶ O       25 cm   ball   25 cm  ──▶ roll      • ── 15 m ──▶ O\n```",
+   "builtin": true
+  },
+  {
+   "id": "g1-gate-master",
+   "number": 3,
+   "code": "G1",
+   "name": "Gate Master",
+   "discipline": "putting",
+   "category": "Start line & strike",
+   "minutes": 8,
+   "warmup": false,
+   "rounds": 1,
+   "summary": "Start line · Score: points, 0–40, higher is better · Slope: Flat",
+   "equipment": "1 putter · 10 balls · 3 tees · tape measure.",
+   "hardMode": "gate moved to 0.5 m (same 5.0 cm gap).",
    "metrics": [
     {
      "id": "gates",
      "label": "Clean gate passes",
      "kind": "count",
-     "max": 10,
-     "better": "higher",
-     "aggregate": "worst",
-     "targets": {
-      "beginner": 5,
-      "low": 8,
-      "tour": 9
-     }
+     "max": 20,
+     "better": "higher"
     },
     {
-     "id": "holed",
+     "id": "holes",
      "label": "Holed",
      "kind": "count",
-     "max": 10,
-     "better": "higher",
-     "aggregate": "sum"
-    }
-   ],
-   "content": "**Origin:** Phil Kenyon. His DP World Tour \"Practise at Home: Putting\" programme uses a gate of about 5 cm in front of the ball and a recorded score over 10 putts from 3 m ([DP World Tour](https://europeantour.com/dpworld-tour/news/articles/detail/practise-your-putting-at-home-with-master-pga-professional-phil-kenyon)). The 0.3 m gate position below is this library's standard.\n\n**What it trains:** Starting the ball on the chosen line. Kenyon rates start line the most important putting skill; a poor start line forces compensations in read and speed ([Today's Golfer](https://todays-golfer.com/super-coaches/phil-kenyon)).\n\n**Equipment:** 1 putter · 10 balls · 3 tees · 1 tape measure.\n\n**Setup:**\n\n- Flat, straight putt of 3.0 m.\n- Tee at the ball position.\n- Gate: 2 tees, 0.3 m in front of the ball, centred on the line to the hole centre, **5.0 cm inner gap** (ball = 4.27 cm, so ±3.6 mm clearance per side = ±0.7°).\n- Check the gate: roll a ball by hand from the ball tee to the hole centre; it must pass dead centre.\n\n**Procedure:**\n\n1. Putt 10 balls with full routine, one at a time.\n2. Score each: through the gate clean (no tee touched) = 1 point. Note separately if holed.\n3. 2 rounds per session; record both.\n\n**Success criteria:** Gate points out of 10.\n\n- Beginner / mid-handicap: ≥ 5/10\n- Low single digit: ≥ 8/10\n- Tour level: ≥ 9/10\n- **Pass** = tier score in both rounds. After 2 passing sessions, move the gate to 0.5 m (±0.4°).\n\n**Progressions & regressions:**\n\n- Harder: gate at 0.5 m; 4.5 m putt; alternate one ball each from 1.5 m, 3 m, 6 m through the same gate.\n- Easier: 6.0 cm gap (±1.6° at 0.3 m); 1.5 m putt.\n\n**Common mistakes:**\n\n- Gate not truly on the line — a 5 mm offset makes the drill train a compensating push or pull.\n- Watching the gate instead of looking at the hole as you would on the course; set up to the hole and let the gate judge.\n- Counting clipped tees as \"through\"; the score is binary.\n\n**Diagram:**\n\n```text\n                |  ← tee\n   • ─ 0.3 m ─▶   ────────────────── 2.7 m ──────────────────▶  O\n                |  ← tee   (inner gap 5.0 cm)\n   |←───────────────────────── 3.0 m ───────────────────────→|\n```",
-   "builtin": true
-  },
-  {
-   "id": "putt-05-breaking-putt-start-gate",
-   "number": 5,
-   "name": "Breaking-Putt Start Gate",
-   "discipline": "putting",
-   "category": "Start Line",
-   "minutes": 10,
-   "warmup": false,
-   "rounds": 1,
-   "summary": "Committing to and hitting the chosen start line on a breaker. It separates execution from reading: the read is fixed in advance, so every miss is a start-line or speed error.",
-   "equipment": "1 putter · 10 balls · 4 tees · 1 tape measure.",
-   "metrics": [
-    {
-     "id": "lr",
-     "label": "Left-to-right points",
-     "kind": "count",
      "max": 20,
      "better": "higher"
     },
-    {
-     "id": "rl",
-     "label": "Right-to-left points",
-     "kind": "count",
-     "max": 20,
-     "better": "higher"
-    },
-    {
-     "id": "total",
-     "label": "Total points",
-     "kind": "count",
-     "max": 40,
-     "better": "higher",
-     "sumOf": [
-      "lr",
-      "rl"
-     ],
-     "targets": {
-      "beginner": 18,
-      "low": 26,
-      "tour": 31
-     }
-    }
-   ],
-   "content": "**Origin:** Common tour/coaching drill.\n\n**What it trains:** Committing to and hitting the chosen start line on a breaker. It separates execution from reading: the read is fixed in advance, so every miss is a start-line or speed error.\n\n**Equipment:** 1 putter · 10 balls · 4 tees · 1 tape measure.\n\n**Setup:**\n\n- Putt of 3.5 m with 15–30 cm of break (side slope ≈ 1.5–2.5%).\n- Calibrate the aim: putt trial balls at your normal speed (would finish ≈ 0.4 m past) and move a single aim tee, set level with the hole, until 2 of 3 trials hole.\n- Gate: 2 tees 0.5 m in front of the ball, on the straight line from ball to aim tee, **6.0 cm inner gap** (±1.0°).\n- Then build the mirror-image putt from the other side of the hole (opposite break).\n\n**Procedure:**\n\n1. 10 balls on the left-to-right putt, full routine.\n2. 10 balls on the right-to-left putt.\n3. Score each ball: through gate clean = 1 point; holed = +1 point.\n\n**Success criteria:** Max 40 points (20 per side).\n\n- Beginner / mid-handicap: ≥ 18/40\n- Low single digit: ≥ 26/40\n- Tour level: ≥ 31/40 (≈ 19 gates + 12 holes)\n- **Pass** = tier score with neither side below 40% of its max. Progress after 2 passing sessions.\n\n**Progressions & regressions:**\n\n- Harder: 5.0 cm gap; 4.5 m with 40 cm break; downhill breakers.\n- Easier: 1.8 m with 5–10 cm break; 7.0 cm gap.\n\n**Common mistakes:**\n\n- Re-reading mid-set. The read is locked; changing it hides start-line errors.\n- Steering the ball toward the hole (the typical under-read compensation) — it shows as low-side gate clips.\n- Gate closer than 0.3 m; at that distance it gives almost no information.\n\n**Diagram:**\n\n```text\n   HIGH SIDE\n                    |                                        T  ← aim tee\n   •  ── 0.5 m ──      ─ ─ ─ ─ ─ start line ─ ─ ─ ─ ─ ─ ─ ─ ─▶   ┐\n                    |  ← gate, 6.0 cm inner gap                  │ 15–30 cm break\n                          ⌒  ⌒  ⌒  ball curves down  ⌒  ⌒      O ┘ hole\n   |←──────────────────────────── 3.5 m ──────────────────────→|\n   LOW SIDE  (green falls toward the bottom of the diagram)\n```",
-   "builtin": true
-  },
-  {
-   "id": "putt-06-eyes-on-hole-a-b-test",
-   "number": 6,
-   "name": "Eyes-on-Hole A/B Test",
-   "discipline": "putting",
-   "category": "Start Line",
-   "minutes": 15,
-   "warmup": false,
-   "rounds": 1,
-   "summary": "Start line without over-controlling the stroke. Putting while looking at the hole removes the urge to steer; comparing it with normal putting shows whether tension or mechanics cause your start-line misses.",
-   "equipment": "1 putter · 10 balls · 3 tees · 1 tape measure.",
-   "metrics": [
-    {
-     "id": "gatesA",
-     "label": "Gates – A (eyes on ball)",
-     "kind": "count",
-     "max": 20,
-     "better": "higher"
-    },
-    {
-     "id": "gatesB",
-     "label": "Gates – B (eyes on hole)",
-     "kind": "count",
-     "max": 20,
-     "better": "higher"
-    },
-    {
-     "id": "holedA",
-     "label": "Holed – A",
-     "kind": "count",
-     "max": 20,
-     "better": "higher"
-    },
-    {
-     "id": "holedB",
-     "label": "Holed – B",
-     "kind": "count",
-     "max": 20,
-     "better": "higher"
-    },
-    {
-     "id": "gates",
-     "label": "Gates total",
-     "kind": "count",
-     "max": 40,
-     "better": "higher",
-     "sumOf": [
-      "gatesA",
-      "gatesB"
-     ],
-     "targets": {
-      "beginner": 24,
-      "low": 32,
-      "tour": 36
-     }
-    },
-    {
-     "id": "holed",
-     "label": "Holed total",
-     "kind": "count",
-     "max": 40,
-     "better": "higher",
-     "sumOf": [
-      "holedA",
-      "holedB"
-     ],
-     "targets": {
-      "beginner": 16,
-      "low": 24,
-      "tour": 30
-     }
-    }
-   ],
-   "content": "**Origin:** Common tour/coaching drill.\n\n**What it trains:** Start line without over-controlling the stroke. Putting while looking at the hole removes the urge to steer; comparing it with normal putting shows whether tension or mechanics cause your start-line misses.\n\n**Equipment:** 1 putter · 10 balls · 3 tees · 1 tape measure.\n\n**Setup:**\n\n- Flat, straight putt of 2.4 m (Tour 50/50 distance).\n- Tee at the ball position.\n- Gate: 2 tees 0.3 m in front of the ball, **5.5 cm inner gap** (±1.2°).\n\n**Procedure:**\n\n1. Block A: 10 putts normal (eyes on ball).\n2. Block B: 10 putts with eyes on the hole from final address to finish; head stays still.\n3. Repeat A, then B: 40 putts total.\n4. Record gate passes and holed putts for A and B separately.\n\n**Success criteria:** Gate passes and makes out of 40 (A + B combined).\n\n- Beginner / mid-handicap: gates ≥ 24 · holed ≥ 16\n- Low single digit: gates ≥ 32 · holed ≥ 24\n- Tour level: gates ≥ 36 · holed ≥ 30\n- **Interpretation:** if B beats A by ≥ 3 gates in 3 sessions, try eyes-on-hole on the course for putts inside 2.5 m. If A beats B, your stroke needs the visual reference — keep it.\n- **Pass** = tier totals. Progress after 2 passing sessions.\n\n**Progressions & regressions:**\n\n- Harder: 3.5 m; gentle breaker (aim at an aim tee); 5.0 cm gap.\n- Easier: 1.5 m; 6.5 cm gap.\n\n**Common mistakes:**\n\n- Turning the head toward the hole after address so the shoulders open; set up looking at the ball, then rotate only the eyes and head in place.\n- Mixing A and B putts randomly — the blocks are the experiment.\n- Judging by one session; the comparison needs at least 3 sessions.\n\n**Diagram:**\n\n```text\n                |  ← tee\n   • ─ 0.3 m ─▶   ──────────────────── 2.1 m ───────────────────▶  O\n                |  ← tee   (inner gap 5.5 cm)\n   Block A: eyes on ball    Block B: eyes on hole\n   |←──────────────────────────── 2.4 m ──────────────────────────→|\n```",
-   "builtin": true
-  },
-  {
-   "id": "putt-07-tiger-s-putter-head-gate",
-   "number": 7,
-   "name": "Tiger's Putter-Head Gate",
-   "discipline": "putting",
-   "category": "Stroke Mechanics & Strike",
-   "minutes": 10,
-   "warmup": true,
-   "rounds": 1,
-   "summary": "Centred strike and a putter path that returns through the same slot. Off-centre strikes cost distance and twist the face; the gate makes them impossible without touching a tee.",
-   "equipment": "1 putter · 6 balls · 4 tees (2 for the head gate, 2 for the progression start gate).",
-   "metrics": [
-    {
-     "id": "trail",
-     "label": "Trail hand only",
-     "kind": "count",
-     "max": 20,
-     "better": "higher",
-     "targets": {
-      "beginner": 12,
-      "low": 16,
-      "tour": 19
-     }
-    },
-    {
-     "id": "both",
-     "label": "Both hands",
-     "kind": "count",
-     "max": 20,
-     "better": "higher",
-     "targets": {
-      "beginner": 14,
-      "low": 18,
-      "tour": 20
-     }
-    }
-   ],
-   "content": "**Origin:** Tiger Woods. He sets a tee outside the heel and toe of the putter, putts from about 1.2 m, and hits at least 20–30 putts trail-hand only before every round ([Golf Digest](https://www.golfdigest.com/story/tiger-woods-putting-drill-gate-two-tees)). The added start gate (progression) is the version many pros now use ([Australian Golf Digest](https://www.australiangolfdigest.com.au/tee-gate-drill-drawbacks-tiger-woods-putting-stroke/)).\n\n**What it trains:** Centred strike and a putter path that returns through the same slot. Off-centre strikes cost distance and twist the face; the gate makes them impossible without touching a tee.\n\n**Equipment:** 1 putter · 6 balls · 4 tees (2 for the head gate, 2 for the progression start gate).\n\n**Setup:**\n\n- Flat, straight putt of 1.2 m.\n- Set the putter behind the ball with the ball on the sweet spot. Push one tee in 5 mm outside the heel and one 5 mm outside the toe, level with the ball's centre (total gap = head width + 1.0 cm).\n- Tees pushed in until only 1–1.5 cm shows, so the putter cannot hop over them.\n\n**Procedure:**\n\n1. 20 putts trail hand only.\n2. 20 putts with both hands.\n3. Score each: putter clears both tees **and** ball holed = 1 point.\n\n**Success criteria:** Points out of 20 per block.\n\n- Beginner / mid-handicap: trail hand ≥ 12 · two hands ≥ 14\n- Low single digit: trail hand ≥ 16 · two hands ≥ 18\n- Tour level: trail hand ≥ 19 · two hands 20/20 (Tour make rate from 1.2 m on the course is 91%; on a flat practice putt, 20/20 is the standard)\n- **Pass** = both block targets. After 2 passing sessions, take the progression.\n\n**Progressions & regressions:**\n\n- Harder: 6 mm total clearance; add a 5.0 cm start gate 0.3 m ahead (four-tee version); move to 2.4 m.\n- Easier: 2 cm total clearance; 0.9 m putt.\n\n**Common mistakes:**\n\n- Squeezing the head through with an open or closed face — the head gate alone allows it, so add the start gate once you pass.\n- Tees left high, so you learn to lift the putter instead of swinging through.\n- Scoring clean strokes that miss the hole; both conditions count.\n\n**Diagram:**\n\n```text\n            head gate: 5 mm clearance each side\n         |  [══ putter ══]  |\n         |        •         |  ─────────── 1.2 m ───────────▶  O\n                 (progression: start gate 5.0 cm at 0.3 m)\n```",
-   "builtin": true
-  },
-  {
-   "id": "putt-08-strike-map-at-9-m",
-   "number": 8,
-   "name": "Strike Map at 9 m",
-   "discipline": "putting",
-   "category": "Stroke Mechanics & Strike",
-   "minutes": 10,
-   "warmup": false,
-   "rounds": 2,
-   "summary": "Centre-face contact on long strokes, where strike errors cost the most distance. You see exactly where each ball met the face.",
-   "equipment": "1 putter · 10 balls · 1 dry-erase (whiteboard) marker · 1 cloth · 1 small ruler (mm) · 2 tees.",
-   "metrics": [
-    {
-     "id": "centred",
-     "label": "Strikes within ±5 mm",
-     "kind": "count",
-     "max": 10,
-     "better": "higher",
-     "aggregate": "worst",
-     "targets": {
-      "beginner": 5,
-      "low": 8,
-      "tour": 9
-     }
-    }
-   ],
-   "content": "**Origin:** Common tour/coaching drill.\n\n**What it trains:** Centre-face contact on long strokes, where strike errors cost the most distance. You see exactly where each ball met the face.\n\n**Equipment:** 1 putter · 10 balls · 1 dry-erase (whiteboard) marker · 1 cloth · 1 small ruler (mm) · 2 tees.\n\n**Setup:**\n\n- Flat putt of 9.0 m to a tee target (or a hole).\n- Find your sweet spot: hang the putter loosely from the grip end and tap the face with a tee; the point where the head does not twist is the sweet spot. Mark it with a thin vertical line on the top line.\n- Draw a small dot (≈ 3 mm) on the back of each ball, facing the putter at address.\n\n**Procedure:**\n\n1. Putt one ball with full routine.\n2. Read where the dot transferred on the face. Measure its heel–toe distance from the sweet-spot line in mm.\n3. Record it (e.g. T4 = 4 mm toward toe) and where the ball finished relative to the tee.\n4. Wipe the face. Repeat for all 10 balls. 2 rounds.\n\n**Success criteria:** Strikes within ±5 mm of the sweet spot, out of 10 per round.\n\n- Beginner / mid-handicap: ≥ 5/10\n- Low single digit: ≥ 8/10\n- Tour level: ≥ 9/10 (and no strike beyond ±8 mm)\n- **Pass** = tier score in both rounds. Progress after 2 passing sessions. A consistent heel or toe bias points to ball position or distance from the ball (Drill 3).\n\n**Progressions & regressions:**\n\n- Harder: ±3 mm window; 15 m; alternate 3 m and 15 m putts.\n- Easier: 4.5 m; ±8 mm window.\n\n**Common mistakes:**\n\n- Marking the sweet spot by eye or by the factory line (often off by several mm).\n- Dot too big or still wet, smearing a 10 mm patch that always looks \"centred\".\n- Checking the face before the ball stops — finish the putt first, so the strike is linked to the result.\n\n**Diagram:**\n\n```text\n   Face close-up:   heel [ · · · · |█| · · · · ] toe     █ = sweet spot, ±5 mm zone\n\n   Green:   • ─────────────────────── 9.0 m ───────────────────────▶ T  target tee\n```",
-   "builtin": true
-  },
-  {
-   "id": "putt-09-stroke-length-tempo-ladder",
-   "number": 9,
-   "name": "Stroke-Length & Tempo Ladder",
-   "discipline": "putting",
-   "category": "Stroke Mechanics & Strike",
-   "minutes": 10,
-   "warmup": true,
-   "rounds": 1,
-   "summary": "Distance control from stroke length at a constant rhythm, with a follow-through matching the backstroke instead of a short backswing and a jab.",
-   "equipment": "1 putter · 9 balls · 7 tees · 1 tape measure · 1 metronome app on your phone.",
-   "metrics": [
     {
      "id": "points",
      "label": "Points",
      "kind": "count",
-     "max": 9,
+     "max": 40,
      "better": "higher",
+     "calc": {
+      "terms": [
+       {
+        "id": "gates",
+        "w": 1
+       },
+       {
+        "id": "holes",
+        "w": 1
+       }
+      ]
+     },
      "targets": {
-      "beginner": 4,
-      "low": 7,
-      "tour": 9
+      "beginner": 18,
+      "low": 28,
+      "tour": 32
      }
     }
    ],
-   "content": "**Origin:** Common tour/coaching drill. The equal back-and-through stroke length it builds is a principle Phil Kenyon advocates ([Today's Golfer](https://todays-golfer.com/super-coaches/phil-kenyon)).\n\n**What it trains:** Distance control from stroke length at a constant rhythm, with a follow-through matching the backstroke instead of a short backswing and a jab.\n\n**Equipment:** 1 putter · 9 balls · 7 tees · 1 tape measure · 1 metronome app on your phone.\n\n**Setup:**\n\n- Flat area with at least 12 m of open green in front.\n- Tee at the ball position.\n- 6 marker tees in a line 10 cm outside the toe side of the ball: backstroke markers 15, 25, 35 cm behind the ball; through markers 15, 25, 35 cm in front.\n- Metronome at 75–85 bpm (pick the rate that matches your natural stroke).\n\n**Procedure:**\n\n1. Start the backstroke on a click, reach the marker on the next click, and let the putter swing through to the matching through marker.\n2. Putt 3 balls with the 15 cm stroke, 3 with 25 cm, 3 with 35 cm. Same rhythm for all.\n3. Measure where each ball stops. For each stroke length, find the spread: longest minus shortest roll.\n4. 3 rounds.\n\n**Success criteria:** 1 point per stroke length per round where the 3 balls finish within 0.5 m of each other **and** every through-stroke reaches its marker ±3 cm. Max 9.\n\n- Beginner / mid-handicap: ≥ 4/9\n- Low single digit: ≥ 7/9\n- Tour level: 9/9\n- **Pass** = tier score. After 2 passing sessions, tighten the window to 0.3 m.\n\n**Progressions & regressions:**\n\n- Harder: 0.3 m window; add a 45 cm stroke; eyes closed.\n- Easier: two lengths only (15 and 30 cm); 0.8 m window.\n\n**Common mistakes:**\n\n- Speeding up the rhythm for longer strokes — the click stays the same; only the length changes.\n- Long backswing, then decelerating; check the through markers.\n- Putting toward a hole; the drill works without a target so you calibrate length, not aim.\n\n**Diagram:**\n\n```text\n   backstroke markers          through markers\n   T     T     T       •       T     T     T\n  35    25    15 cm   ball    15    25    35 cm     ─────▶ roll-out (no hole, ≥ 12 m clear)\n   (markers 10 cm outside the toe line; metronome 75–85 bpm)\n```",
+   "content": "**Equipment:** 1 putter · 10 balls · 3 tees · tape measure.\n\n**Setup:**\n\n- Straight putt of 3.0 m. Tee at the ball position.\n- Gate: 2 tees 0.3 m in front of the ball, **5.0 cm inner gap**, centred on the line to the hole centre. Check by rolling a ball by hand from the ball tee to the hole: it must pass the gate centre.\n\n**Rules:**\n\n1. Putt 20 balls (2 × 10), full routine on each.\n2. Each ball: through the gate without touching a tee = 1 point; holed = +1 point.\n\n**Scoring:** gate passes + holes. Tiebreak: more holes.\n\n**Targets:** Beginner / mid ≥ 18 · Low single digit ≥ 28 · Tour ≥ 32\n\n**Hard mode:** gate moved to 0.5 m (same 5.0 cm gap).\n\n```text\n                |\n   T• ─0.3 m─▶     ─────────────── 2.7 m ───────────────▶  O\n                |   gate 5.0 cm inner gap\n   |←────────────────────── 3.0 m ──────────────────────→|\n```",
    "builtin": true
   },
   {
-   "id": "putt-10-pelz-6-m-reference-putt-43-cm-rule",
-   "number": 10,
-   "name": "Pelz 6 m Reference Putt (43 cm Rule)",
+   "id": "g2-sweet-spot",
+   "number": 4,
+   "code": "G2",
+   "name": "Sweet Spot",
    "discipline": "putting",
-   "category": "Speed / Distance Control",
+   "category": "Start line & strike",
+   "minutes": 8,
+   "warmup": false,
+   "rounds": 1,
+   "summary": "Strike · Score: points, 0–20, higher is better · Slope: Flat",
+   "equipment": "1 putter · 10 balls · 1 dry-erase (whiteboard) marker · 1 cloth · 1 small mm ruler · 2 tees.",
+   "hardMode": "15 m.",
+   "metrics": [
+    {
+     "id": "within3",
+     "label": "Strikes within ±3 mm (2 pts)",
+     "kind": "count",
+     "max": 10,
+     "better": "higher"
+    },
+    {
+     "id": "within6",
+     "label": "Strikes ±3.1–6 mm (1 pt)",
+     "kind": "count",
+     "max": 10,
+     "better": "higher"
+    },
+    {
+     "id": "points",
+     "label": "Points",
+     "kind": "count",
+     "max": 20,
+     "better": "higher",
+     "calc": {
+      "terms": [
+       {
+        "id": "within3",
+        "w": 2
+       },
+       {
+        "id": "within6",
+        "w": 1
+       }
+      ]
+     },
+     "targets": {
+      "beginner": 8,
+      "low": 13,
+      "tour": 17
+     }
+    },
+    {
+     "id": "heel",
+     "label": "Misses toward heel",
+     "kind": "count",
+     "max": 10,
+     "better": "none"
+    },
+    {
+     "id": "toe",
+     "label": "Misses toward toe",
+     "kind": "count",
+     "max": 10,
+     "better": "none"
+    }
+   ],
+   "content": "**Equipment:** 1 putter · 10 balls · 1 dry-erase (whiteboard) marker · 1 cloth · 1 small mm ruler · 2 tees.\n\n**Setup:**\n\n- Putt of 9.0 m to a target tee.\n- Sweet spot: hang the putter loosely by the grip and tap the face with a tee; where the head does not twist is the sweet spot. Mark it with a thin line on the top line.\n- A 3 mm dot on the back of each ball, facing the putter at address.\n\n**Rules:**\n\n1. Putt one ball to the target tee.\n2. Read where the dot transferred on the face; measure its heel–toe distance from the sweet-spot line.\n3. Wipe the face. 10 balls.\n\n**Scoring:** within ±3 mm = 2 points; ±3.1–6 mm = 1 point; beyond 6 mm = 0. Tiebreak: total ball distance from the target tee (lower wins).\n\n**Targets:** Beginner / mid ≥ 8 · Low single digit ≥ 13 · Tour ≥ 17\n\n**Hard mode:** 15 m.\n\n```text\n   Face:   heel [ · · · ·|▒|█|▒|· · · · ] toe    █ = ±3 mm (2 pts)  ▒ = ±6 mm (1 pt)\n\n   Green:  • ─────────────────────── 9.0 m ───────────────────────▶ T\n```",
+   "builtin": true
+  },
+  {
+   "id": "g3-circle-streak",
+   "number": 5,
+   "code": "G3",
+   "name": "Circle Streak",
+   "discipline": "putting",
+   "category": "Short putts & pressure",
    "minutes": 15,
    "warmup": false,
    "rounds": 1,
-   "summary": "A repeatable reference speed that carries the ball through the trampled ring around the hole without making the effective hole smaller.",
-   "equipment": "1 putter · 3 balls · 6 tees · 1 tape measure · timer.",
+   "summary": "Short putts · Score: best streak, 0–100, higher is better · Slope: Breaking (1–2%)",
+   "equipment": "1 putter · 10 balls · 10 tees · timer.",
+   "hardMode": "1.2 m circle.",
    "metrics": [
     {
      "id": "streak",
      "label": "Best streak",
      "kind": "count",
-     "better": "higher",
-     "targets": {
-      "beginner": 5,
-      "low": 9,
-      "tour": 15
-     }
-    },
-    {
-     "id": "zone",
-     "label": "Putts in zone",
-     "kind": "number",
-     "unit": "%",
      "max": 100,
      "better": "higher",
      "targets": {
-      "beginner": 50,
-      "low": 70,
-      "tour": 85
+      "beginner": 25,
+      "low": 50,
+      "tour": 100
      }
+    },
+    {
+     "id": "time",
+     "label": "Time to 100 (if reached)",
+     "kind": "number",
+     "unit": "min",
+     "better": "lower"
     }
    ],
-   "content": "**Origin:** Dave Pelz. His research put optimal make speed at a roll of about 17 in (43 cm) past the hole when the putt misses ([GOLF.com](https://golf.com/instruction/dave-pelzs-10-truths-about-putting/)). His \"20-foot putt game\" uses 3 balls between two holes 20 ft (6.1 m) apart, restarting the count when a putt is short or beyond the safe zone ([Pelz / SYNLawn Elements of Practice](https://synlawngolf.com/wp-content/uploads/2024/07/eop03.pdf)).\n\n**What it trains:** A repeatable reference speed that carries the ball through the trampled ring around the hole without making the effective hole smaller.\n\n**Equipment:** 1 putter · 3 balls · 6 tees · 1 tape measure · timer.\n\n**Setup:**\n\n- Two holes 6.1 m apart on a fairly flat line. With only one hole: two putting stations 6.1 m from the hole on opposite sides.\n- Safe zone behind each hole: tees at 0.43 m past (ideal) and 0.9 m past (limit), zone 0.6 m wide (0.3 m either side of the line).\n\n**Procedure:**\n\n1. Putt 3 balls from beside hole A to hole B.\n2. Each ball holed or finishing inside the safe zone extends the streak; a ball short of the hole or beyond the zone resets the streak to 0.\n3. Walk to hole B, putt the 3 balls back to A. Continue for 15 minutes.\n4. Record best streak and % of putts in zone.\n\n**Success criteria:**\n\n- Beginner / mid-handicap: best streak ≥ 5 · ≥ 50% in zone\n- Low single digit: best streak ≥ 9 · ≥ 70% in zone\n- Tour level: best streak ≥ 15 · ≥ 85% in zone (Tour 3-putt rate from 4.6–6.1 m is 1.5%)\n- **Pass** = both tier numbers. After 2 passing sessions, shrink the zone limit to 0.6 m past.\n\n**Progressions & regressions:**\n\n- Harder: zone 0.6 m deep; 9 m apart; downhill direction only.\n- Easier: 4.5 m; allow balls up to 0.15 m short.\n\n**Common mistakes:**\n\n- Blasting everything 1 m past to avoid \"short\" — the zone limit exists to stop that.\n- Not resetting the streak honestly on a lip-out that rolls beyond the zone.\n- Changing to a new line every putt; the drill builds one reference speed, so keep the line fixed.\n\n**Diagram:**\n\n```text\n    hole A                                        hole B\n      O                                             O  ┆ T     T\n     •••  ──────────────── 6.1 m ────────────────▶     ┆0.43  0.90 m past\n                                                    └── safe zone, 0.6 m wide ──┘\n    (then putt back B → A into the matching zone behind A)\n```",
+   "content": "Based on Phil Mickelson's 3-ft circle drill: 10 tees round the hole, 100 in a row, restart on a miss ([GOLF.com](https://golf.com/instruction/phil-mickelson-key-3-footer-play-smart/)).\n\n**Equipment:** 1 putter · 10 balls · 10 tees · timer.\n\n**Setup:**\n\n- Hole on a 1–2% slope.\n- 10 tees 0.9 m from the hole centre, evenly spaced (≈ 0.57 m apart).\n\n**Rules:**\n\n1. Putt round the circle, one ball per tee, full routine. Reload and continue.\n2. A miss resets the streak to 0; continue from the next tee.\n3. Game ends at 100 in a row or after 15 minutes.\n\n**Scoring:** best streak. Tiebreak: time to reach it (faster wins).\n\n**Targets:** Beginner / mid ≥ 25 · Low single digit ≥ 50 · Tour 100 (Tour makes 99.4% from 0.9 m)\n\n**Hard mode:** 1.2 m circle.\n\n```text\n                 T     T\n             T             T\n            T       O       T      10 tees, 0.9 m from hole centre\n             T             T\n                 T     T\n```",
    "builtin": true
   },
   {
-   "id": "putt-11-leapfrog-ladder",
-   "number": 11,
-   "name": "Leapfrog Ladder",
+   "id": "g4-step-back-survival",
+   "number": 6,
+   "code": "G4",
+   "name": "Step-Back Survival",
    "discipline": "putting",
-   "category": "Speed / Distance Control",
-   "minutes": 10,
+   "category": "Short putts & pressure",
+   "minutes": 8,
+   "warmup": false,
+   "rounds": 1,
+   "summary": "Pressure · Score: farthest putt holed (m), 0–6.0, higher is better · Slope: Flat (straight, may be gently uphill)",
+   "equipment": "1 putter · 1 ball · 11 tees · tape measure.",
+   "hardMode": "Breaking class (1–2% side slope); 2 lives.",
+   "metrics": [
+    {
+     "id": "farthest",
+     "label": "Farthest holed",
+     "kind": "number",
+     "unit": "m",
+     "max": 6,
+     "step": 0.5,
+     "better": "higher",
+     "targets": {
+      "beginner": 2,
+      "low": 3,
+      "tour": 4
+     }
+    },
+    {
+     "id": "lives",
+     "label": "Lives left",
+     "kind": "count",
+     "max": 3,
+     "better": "higher"
+    }
+   ],
+   "content": "**Equipment:** 1 putter · 1 ball · 11 tees · tape measure.\n\n**Setup:**\n\n- One straight line to a hole. Tees at 1.0, 1.5, 2.0 … 6.0 m from the hole centre (every 0.5 m).\n\n**Rules:**\n\n1. Start at 1.0 m. Hole it → move back to the next tee.\n2. Miss → lose a life and retry the same distance. You have 3 lives.\n3. Game ends on the third miss or when 6.0 m is holed.\n\n**Scoring:** farthest distance holed (0 if none). Tiebreak: lives left.\n\n**Targets:** Beginner / mid ≥ 2.0 m · Low single digit ≥ 3.0 m · Tour ≥ 4.0 m\n\n**Hard mode:** Breaking class (1–2% side slope); 2 lives.\n\n```text\n   6.0  5.5  5.0  4.5  4.0  3.5  3.0  2.5  2.0  1.5  1.0 m\n    T    T    T    T    T    T    T    T    T    T    T  ─────▶  O\n                                         start here ──┘  (make = step back, miss = −1 life)\n```",
+   "builtin": true
+  },
+  {
+   "id": "g5-short-putt-strokes-gained-test",
+   "number": 7,
+   "code": "G5",
+   "name": "Short-Putt Strokes-Gained Test",
+   "discipline": "putting",
+   "category": "Short putts & pressure",
+   "minutes": 8,
+   "warmup": false,
+   "rounds": 1,
+   "summary": "Short putts · Score: strokes gained vs Tour, −7.1 to +2.9, higher is better · Slope: Breaking (1–2%)",
+   "equipment": "1 putter · 1 ball · 10 tees · tape measure.",
+   "hardMode": "Steep class hole (2.5–3.5%).",
+   "metrics": [
+    {
+     "id": "makes",
+     "label": "Makes",
+     "kind": "count",
+     "max": 10,
+     "better": "higher"
+    },
+    {
+     "id": "sg",
+     "label": "Strokes gained vs Tour",
+     "kind": "number",
+     "better": "higher",
+     "signed": true,
+     "calc": {
+      "terms": [
+       {
+        "id": "makes",
+        "w": 1
+       }
+      ],
+      "offset": -7.1
+     },
+     "targets": {
+      "beginner": -2.6,
+      "low": -1.1,
+      "tour": 0
+     }
+    }
+   ],
+   "content": "**Equipment:** 1 putter · 1 ball · 10 tees · tape measure.\n\n**Setup:**\n\n- Hole on a 1–2% slope.\n- 10 tees: 2 each at 1.2, 1.5, 1.8, 2.1 and 2.4 m. Each pair has one left-to-right and one right-to-left putt.\n\n**Rules:**\n\n1. One ball, full routine, one attempt per tee, in any order.\n2. Record make or miss per tee.\n\n**Scoring:** makes − 7.1. The 7.1 is the Tour expected makes for this set (2 × (91.4% + 80.7% + 70.2% + 60.6% + 52.9%)). Example: 6 makes = −1.1.\n\n**Targets:** Beginner / mid ≥ −2.6 (4.5 makes) · Low single digit ≥ −1.1 (6 makes) · Tour ≥ 0.0\n\n**Hard mode:** Steep class hole (2.5–3.5%).\n\n```text\n              2.4 T                      T 2.4\n                 2.1 T                T 2.1\n                    1.8 T          T 1.8        left column: breaks L→R\n                       1.5 T    T 1.5           right column: breaks R→L\n                          1.2 T T 1.2\n                              O\n```",
+   "builtin": true
+  },
+  {
+   "id": "g6-never-short",
+   "number": 8,
+   "code": "G6",
+   "name": "Never Short",
+   "discipline": "putting",
+   "category": "Speed control",
+   "minutes": 6,
+   "warmup": false,
+   "rounds": 1,
+   "summary": "Speed · Score: points, 0–30, higher is better · Slope: Flat",
+   "equipment": "1 putter · 10 balls · 4 tees · tape measure.",
+   "hardMode": "zone 0.6 m deep; or downhill direction.",
+   "metrics": [
+    {
+     "id": "holed",
+     "label": "Holed (3 pts)",
+     "kind": "count",
+     "max": 10,
+     "better": "higher"
+    },
+    {
+     "id": "zone",
+     "label": "In safe zone (2 pts)",
+     "kind": "count",
+     "max": 10,
+     "better": "higher"
+    },
+    {
+     "id": "points",
+     "label": "Points",
+     "kind": "count",
+     "max": 30,
+     "better": "higher",
+     "calc": {
+      "terms": [
+       {
+        "id": "holed",
+        "w": 3
+       },
+       {
+        "id": "zone",
+        "w": 2
+       }
+      ]
+     },
+     "targets": {
+      "beginner": 10,
+      "low": 15,
+      "tour": 20
+     }
+    }
+   ],
+   "content": "Based on Dave Pelz's finding that the best make speed rolls a missed putt about 43 cm (17 in) past the hole ([GOLF.com](https://golf.com/instruction/dave-pelzs-10-truths-about-putting/)).\n\n**Equipment:** 1 putter · 10 balls · 4 tees · tape measure.\n\n**Setup:**\n\n- Putt of 6.1 m to a hole.\n- Safe zone behind the hole: from the hole to 0.9 m past it, 0.3 m either side of the line. Mark the back corners with 2 tees and the 0.43 m \"perfect\" point with 1 tee.\n\n**Rules:**\n\n1. 10 balls, full routine each.\n2. Holed = 3 points · stopped in the safe zone = 2 points · short of the hole or outside the zone = 0.\n\n**Scoring:** total points. Tiebreak: more holed.\n\n**Targets:** Beginner / mid ≥ 10 · Low single digit ≥ 15 · Tour ≥ 20\n\n**Hard mode:** zone 0.6 m deep; or downhill direction.\n\n```text\n                                                  T ┐\n   • ─────────────────── 6.1 m ───────────────▶  O  T 0.43 m   safe zone: 0–0.9 m past,\n                                                  T ┘ 0.9 m    0.6 m wide\n```",
+   "builtin": true
+  },
+  {
+   "id": "g7-leapfrog",
+   "number": 9,
+   "code": "G7",
+   "name": "Leapfrog",
+   "discipline": "putting",
+   "category": "Speed control",
+   "minutes": 8,
    "warmup": false,
    "rounds": 3,
-   "summary": "Fine distance increments without a hole. Each ball must go a little past the last, which forces precise, graded changes in pace.",
+   "summary": "Distance increments · Score: balls placed, 0–18, higher is better · Slope: Flat",
    "equipment": "1 putter · 6 balls · 3 tees.",
+   "hardMode": "max gap 0.45 m.",
    "metrics": [
     {
      "id": "balls",
@@ -432,272 +358,429 @@
      "kind": "count",
      "max": 6,
      "better": "higher",
-     "aggregate": "avg",
+     "aggregate": "sum",
      "targets": {
-      "beginner": 3,
-      "low": 5,
-      "tour": 6
+      "beginner": 9,
+      "low": 15,
+      "tour": 18
      }
     }
    ],
-   "content": "**Origin:** Common tour/coaching drill.\n\n**What it trains:** Fine distance increments without a hole. Each ball must go a little past the last, which forces precise, graded changes in pace.\n\n**Equipment:** 1 putter · 6 balls · 3 tees.\n\n**Setup:**\n\n- Open stretch of green with 10 m clear, flat or slightly uphill.\n- Tee at the start; tee at 3.0 m (first target); tee at 9.0 m (limit).\n\n**Procedure:**\n\n1. Ball 1 must stop past the 3.0 m tee and within 0.9 m of it.\n2. Each next ball must stop past the previous ball and no more than 0.9 m beyond it. Putt on a line about 10 cm to the side to avoid collisions.\n3. A ball that stops short of the previous ball, more than 0.9 m past it, or beyond the 9.0 m tee ends the round. Score = balls placed (max 6).\n4. 3 rounds: uphill, downhill, sidehill.\n\n**Success criteria:** Average balls placed over 3 rounds.\n\n- Beginner / mid-handicap: ≥ 3\n- Low single digit: ≥ 5\n- Tour level: 6 in every round\n- **Pass** = tier average. After 2 passing sessions, reduce the max gap to 0.6 m, then 0.45 m.\n\n**Progressions & regressions:**\n\n- Harder: 0.45 m gap; downhill only; reverse ladder (each ball shorter than the last, coming back toward you).\n- Easier: 1.2 m gap; 4 balls.\n\n**Common mistakes:**\n\n- Hitting the previous ball and counting the knock-on position.\n- Rushing — each ball needs its own look at the distance.\n- Using the same tiny increment every time instead of judging the actual gap.\n\n**Diagram:**\n\n```text\n   T start                    T 3.0 m                                 T 9.0 m limit\n   • ───────────────────────▶ |  ①  ②  ③  ④  ⑤  ⑥  ─ ─ ─ ─ ─ ─ ─ ─ |\n                                each ball ≤ 0.9 m past the previous one\n```",
+   "content": "**Equipment:** 1 putter · 6 balls · 3 tees.\n\n**Setup:**\n\n- A straight stretch with 10 m clear. Tee at the start, tee at 3.0 m, tee at 9.0 m (limit).\n\n**Rules:**\n\n1. Ball 1 must stop past the 3.0 m tee and within 0.9 m of it.\n2. Each next ball must stop past the previous ball and no more than 0.9 m beyond it. Putt on a line about 10 cm to the side to avoid hitting balls.\n3. A ball short of the previous one, more than 0.9 m past it, or beyond 9.0 m ends the round.\n4. 3 rounds; turn round and play the opposite direction in round 2.\n\n**Scoring:** total balls placed over 3 rounds (max 6 per round). Tiebreak: higher single-round best.\n\n**Targets:** Beginner / mid ≥ 9 · Low single digit ≥ 15 · Tour 18\n\n**Hard mode:** max gap 0.45 m.\n\n```text\n   T start                 T 3.0 m                                T 9.0 m limit\n   • ────────────────────▶ |  ①  ②  ③  ④  ⑤  ⑥   ─ ─ ─ ─ ─ ─ ─ ─ |\n                              each ≤ 0.9 m past the previous ball\n```",
    "builtin": true
   },
   {
-   "id": "putt-12-eyes-closed-speed-prediction",
-   "number": 12,
-   "name": "Eyes-Closed Speed Prediction",
+   "id": "g8-distance-call",
+   "number": 10,
+   "code": "G8",
+   "name": "Distance Call",
    "discipline": "putting",
-   "category": "Speed / Distance Control",
+   "category": "Speed control",
    "minutes": 10,
    "warmup": false,
    "rounds": 1,
-   "summary": "Internal feel for strike and pace. Calling the result before seeing it teaches you to sense speed from the stroke itself, which is what calibrates you to new greens.",
-   "equipment": "1 putter · 10 balls · 5 tees.",
+   "summary": "Speed on demand · Score: points, 0–36, higher is better · Slope: Flat",
+   "equipment": "1 putter · 3 balls · 7 tees · tape measure · the app (or one die).",
+   "hardMode": "targets move to 4, 7, 10, 13, 16, 19 m.",
+   "caller": {
+    "label": "Call target",
+    "options": [
+     "3 m",
+     "5 m",
+     "7 m",
+     "9 m",
+     "11 m",
+     "13 m"
+    ]
+   },
+   "metrics": [
+    {
+     "id": "within5",
+     "label": "Within 5% (3 pts)",
+     "kind": "count",
+     "max": 12,
+     "better": "higher"
+    },
+    {
+     "id": "within10",
+     "label": "Within 5–10% (2 pts)",
+     "kind": "count",
+     "max": 12,
+     "better": "higher"
+    },
+    {
+     "id": "within15",
+     "label": "Within 10–15% (1 pt)",
+     "kind": "count",
+     "max": 12,
+     "better": "higher"
+    },
+    {
+     "id": "points",
+     "label": "Points",
+     "kind": "count",
+     "max": 36,
+     "better": "higher",
+     "calc": {
+      "terms": [
+       {
+        "id": "within5",
+        "w": 3
+       },
+       {
+        "id": "within10",
+        "w": 2
+       },
+       {
+        "id": "within15",
+        "w": 1
+       }
+      ]
+     },
+     "targets": {
+      "beginner": 12,
+      "low": 20,
+      "tour": 27
+     }
+    }
+   ],
+   "content": "**Equipment:** 1 putter · 3 balls · 7 tees · tape measure · the app (or one die).\n\n**Setup:**\n\n- One straight line with 14 m clear. Start tee, then target tees at 3, 5, 7, 9, 11 and 13 m.\n\n**Rules:**\n\n1. Before each ball the app calls a random target (without the app, roll a die: 1 = 3 m, 2 = 5 m … 6 = 13 m).\n2. Putt to stop at the called tee. Measure the ball's distance from that tee.\n3. 12 balls.\n\n**Scoring:** within 5% of the called distance = 3 points · within 10% = 2 · within 15% = 1 · beyond = 0. Example at 9 m: 0.45 m / 0.9 m / 1.35 m. Tiebreak: lower total error in metres.\n\n**Targets:** Beginner / mid ≥ 12 · Low single digit ≥ 20 · Tour ≥ 27\n\n**Hard mode:** targets move to 4, 7, 10, 13, 16, 19 m.\n\n```text\n   start    3 m     5 m     7 m     9 m     11 m    13 m\n     T •──▶  T       T       T       T       T       T\n            app calls one target per ball (random)\n```",
+   "builtin": true
+  },
+  {
+   "id": "g9-up-down",
+   "number": 11,
+   "code": "G9",
+   "name": "Up & Down",
+   "discipline": "putting",
+   "category": "Speed control",
+   "minutes": 10,
+   "warmup": false,
+   "rounds": 1,
+   "summary": "Speed on slopes · Score: points, 0–24, higher is better · Slope: Fall line, 2–3% gradient",
+   "equipment": "1 putter · 2 balls · 6 tees · tape measure · optional phone level.",
+   "hardMode": "stations at 6.0 m.",
+   "metrics": [
+    {
+     "id": "holed",
+     "label": "Holed (2 pts)",
+     "kind": "count",
+     "max": 12,
+     "better": "higher"
+    },
+    {
+     "id": "zone",
+     "label": "In zone (1 pt)",
+     "kind": "count",
+     "max": 12,
+     "better": "higher"
+    },
+    {
+     "id": "points",
+     "label": "Points",
+     "kind": "count",
+     "max": 24,
+     "better": "higher",
+     "calc": {
+      "terms": [
+       {
+        "id": "holed",
+        "w": 2
+       },
+       {
+        "id": "zone",
+        "w": 1
+       }
+      ]
+     },
+     "targets": {
+      "beginner": 8,
+      "low": 13,
+      "tour": 17
+     }
+    }
+   ],
+   "content": "**Equipment:** 1 putter · 2 balls · 6 tees · tape measure · optional phone level.\n\n**Setup:**\n\n- A hole on a straight fall line with a 2–3% gradient.\n- Station U 4.5 m directly below the hole (uphill putt); station D 4.5 m directly above it (downhill putt).\n- Zones: 0–0.6 m past the hole, 0.3 m either side of the line, on both sides of the hole.\n\n**Rules:**\n\n1. Putt 1 ball uphill from U, then walk round and putt 1 ball downhill from D.\n2. 6 pairs (12 putts), always alternating.\n\n**Scoring:** holed = 2 points · in zone = 1 · short or beyond = 0. Tiebreak: more downhill points.\n\n**Targets:** Beginner / mid ≥ 8 · Low single digit ≥ 13 · Tour ≥ 17\n\n**Hard mode:** stations at 6.0 m.\n\n```text\n          D  •   4.5 m above (putt ↓)\n             T   downhill zone limit (0.6 m below hole)   HIGH ↑\n             O\n             T   uphill zone limit (0.6 m above hole)     LOW ↓\n          U  •   4.5 m below (putt ↑)\n```",
+   "builtin": true
+  },
+  {
+   "id": "g10-blind-feel",
+   "number": 12,
+   "code": "G10",
+   "name": "Blind Feel",
+   "discipline": "putting",
+   "category": "Speed control",
+   "minutes": 10,
+   "warmup": false,
+   "rounds": 1,
+   "summary": "Feel / internal feedback · Score: points, 0–40, higher is better · Slope: Flat",
+   "equipment": "1 putter · 10 balls · 7 tees.",
+   "hardMode": "zone ±0.3 m.",
    "metrics": [
     {
      "id": "calls",
      "label": "Correct calls",
      "kind": "count",
      "max": 20,
-     "better": "higher",
-     "targets": {
-      "beginner": 12,
-      "low": 15,
-      "tour": 17
-     }
+     "better": "higher"
     },
     {
-     "id": "good",
-     "label": "Balls in good zone",
+     "id": "zone",
+     "label": "Balls in ±0.5 m zone",
      "kind": "count",
      "max": 20,
-     "better": "higher",
-     "targets": {
-      "beginner": 6,
-      "low": 10,
-      "tour": 14
-     }
-    }
-   ],
-   "content": "**Origin:** Common tour/coaching drill.\n\n**What it trains:** Internal feel for strike and pace. Calling the result before seeing it teaches you to sense speed from the stroke itself, which is what calibrates you to new greens.\n\n**Equipment:** 1 putter · 10 balls · 5 tees.\n\n**Setup:**\n\n- Flat or gentle uphill line.\n- Target tees at 5.0 m and 10.0 m.\n- Zone tees 0.5 m short and 0.5 m long of each target (\"good\" = within ±0.5 m).\n\n**Procedure:**\n\n1. Set up and aim with eyes open; close your eyes before the backstroke.\n2. Putt, keep eyes closed, and call \"short\", \"good\" or \"long\" out loud.\n3. Open your eyes and record the call and the result.\n4. 10 balls to 5 m, then 10 balls to 10 m.\n\n**Success criteria:** Correct calls and balls in the good zone, both out of 20.\n\n- Beginner / mid-handicap: calls ≥ 12 · good ≥ 6\n- Low single digit: calls ≥ 15 · good ≥ 10\n- Tour level: calls ≥ 17 · good ≥ 14\n- **Pass** = both tier numbers. After 2 passing sessions, call in 25 cm bands (e.g. \"25 short\", \"50 long\").\n\n**Progressions & regressions:**\n\n- Harder: random distance each ball (5, 7.5, 10, 12.5 m); call in 25 cm bands.\n- Easier: one distance (5 m); ±0.75 m zone.\n\n**Common mistakes:**\n\n- Calling after hearing the ball stop or peeking.\n- Grading only the result and ignoring wrong calls — the call accuracy is the main score.\n- Opening the eyes at the last moment of the stroke.\n\n**Diagram:**\n\n```text\n                     0.5  T  0.5                       0.5  T  0.5\n   • ──────────────── |   5 m   | ──────────────────── |  10 m  |\n                    short | good | long              short | good | long\n```",
-   "builtin": true
-  },
-  {
-   "id": "putt-13-uphill-downhill-speed-pairs",
-   "number": 13,
-   "name": "Uphill / Downhill Speed Pairs",
-   "discipline": "putting",
-   "category": "Speed / Distance Control",
-   "minutes": 10,
-   "warmup": false,
-   "rounds": 1,
-   "summary": "Adjusting pace for slope. Alternating one uphill and one downhill putt prevents you from grooving one speed and forces a fresh judgement each time.",
-   "equipment": "1 putter · 6 balls · 6 tees · 1 tape measure · optional phone level app.",
-   "metrics": [
+     "better": "higher"
+    },
     {
      "id": "points",
      "label": "Points",
      "kind": "count",
-     "max": 12,
+     "max": 40,
      "better": "higher",
+     "calc": {
+      "terms": [
+       {
+        "id": "calls",
+        "w": 1
+       },
+       {
+        "id": "zone",
+        "w": 1
+       }
+      ]
+     },
      "targets": {
-      "beginner": 6,
-      "low": 9,
-      "tour": 11
+      "beginner": 18,
+      "low": 25,
+      "tour": 31
      }
     }
    ],
-   "content": "**Origin:** Common tour/coaching drill.\n\n**What it trains:** Adjusting pace for slope. Alternating one uphill and one downhill putt prevents you from grooving one speed and forces a fresh judgement each time.\n\n**Equipment:** 1 putter · 6 balls · 6 tees · 1 tape measure · optional phone level app.\n\n**Setup:**\n\n- A hole on a straight fall line with 2–3% slope.\n- Station U: 4.5 m directly below the hole (uphill putt).\n- Station D: 4.5 m directly above the hole (downhill putt).\n- Zone markers: tee 0.6 m past the hole on each side (below the hole for downhill putts, above for uphill), zone 0.6 m wide.\n\n**Procedure:**\n\n1. Putt 1 ball uphill from U.\n2. Walk round and putt 1 ball downhill from D.\n3. Repeat for 6 pairs (12 putts). One routine per putt.\n4. Score 1 point per ball holed or finishing in its zone.\n\n**Success criteria:** Points out of 12.\n\n- Beginner / mid-handicap: ≥ 6\n- Low single digit: ≥ 9\n- Tour level: ≥ 11 (Tour 3-putt rate from this range is under 1%)\n- **Pass** = tier score with at least 40% of downhill putts scoring. After 2 passing sessions, use 6.0 m stations.\n\n**Progressions & regressions:**\n\n- Harder: 6.0 m stations; zone 0.45 m; add two sidehill stations.\n- Easier: 3.0 m stations; zone 0.9 m.\n\n**Common mistakes:**\n\n- Putting all uphill balls first, then all downhill — that is blocked practice and defeats the drill.\n- Treating short downhill putts as \"good\" because they are close.\n- Ignoring how much the stroke length differed; note it after each pair.\n\n**Diagram:**\n\n```text\n          D  •   (station 4.5 m above hole, putt downhill ↓)\n             ↓\n             T  ← downhill zone limit is BELOW the hole (0.6 m past)\n             O  hole            HIGH ↑\n             T  ← uphill zone limit is ABOVE the hole (0.6 m past)\n             ↑                  LOW  ↓   (fall line, 2–3%)\n          U  •   (station 4.5 m below hole, putt uphill ↑)\n```\n\nNote on Drill 13's diagram: the vertical axis is the fall line. The uphill ball rolls up past the hole toward D's side, so its zone tee is the one between the hole and D; the downhill ball rolls past toward U, so its zone tee is between the hole and U.",
+   "content": "**Equipment:** 1 putter · 10 balls · 7 tees.\n\n**Setup:**\n\n- One straight line: start tee, target tees at 5.0 m and 10.0 m.\n- Zone tees 0.5 m short and 0.5 m long of each target.\n\n**Rules:**\n\n1. Alternate targets: 5 m, 10 m, 5 m … (20 balls).\n2. Aim with eyes open, close them before the backstroke, keep them closed until you call \"short\", \"good\" or \"long\" out loud.\n3. Then look.\n\n**Scoring:** correct call = 1 point · ball finishes in the ±0.5 m zone = 1 point. Tiebreak: more correct calls.\n\n**Targets:** Beginner / mid ≥ 18 · Low single digit ≥ 25 · Tour ≥ 31\n\n**Hard mode:** zone ±0.3 m.\n\n```text\n                     0.5 T 0.5                        0.5 T 0.5\n   T • ──────────── |  5 m  | ────────────────────── | 10 m  |\n                  short good long                   short good long\n```",
    "builtin": true
   },
   {
-   "id": "putt-14-mickelson-lag-ladder-9-12-15-m",
-   "number": 14,
-   "name": "Mickelson Lag Ladder (9 / 12 / 15 m)",
+   "id": "g11-lag-darts",
+   "number": 13,
+   "code": "G11",
+   "name": "Lag Darts",
    "discipline": "putting",
-   "category": "Lag Putting",
-   "minutes": 15,
-   "warmup": false,
-   "rounds": 1,
-   "summary": "Lag speed under the pressure of a streak. Leaving every lag inside 0.9 m removes almost all 3-putts (Tour 3-putt rate from inside 1.5 m is 0.1%).",
-   "equipment": "1 putter · 5 balls · 3 station tees · 4 coins or tees to mark the circle · 1 tape measure (or your putter length).",
-   "metrics": [
-    {
-     "id": "balls",
-     "label": "Balls to finish all 3 stations",
-     "kind": "count",
-     "better": "lower",
-     "targets": {
-      "beginner": 45,
-      "low": 60,
-      "tour": 30
-     }
-    }
-   ],
-   "content": "**Origin:** Phil Mickelson, as described by Butch Harmon: tees at 30, 40 and 50 ft, five balls in a row from each tee to within 3 ft of the hole, starting at 40 ft, then 30, then 50 ([Golf Digest, 2008](https://www.golfdigest.com/story/harmon_gd0805)). A three-in-a-row version is also documented ([Golf Digest](https://www.golfdigest.com/story/3-tour-secrets-thatll-get-you-making-putts)).\n\n**What it trains:** Lag speed under the pressure of a streak. Leaving every lag inside 0.9 m removes almost all 3-putts (Tour 3-putt rate from inside 1.5 m is 0.1%).\n\n**Equipment:** 1 putter · 5 balls · 3 station tees · 4 coins or tees to mark the circle · 1 tape measure (or your putter length).\n\n**Setup:**\n\n- One hole; stations at 9.1 m, 12.2 m and 15.2 m. Use different angles to the hole if the green allows.\n- Circle: 0.9 m radius from the hole centre, marked at 4 points (12, 3, 6, 9 o'clock).\n\n**Procedure:**\n\n1. Start at 12.2 m. Putt 5 balls; all 5 must finish inside the circle (or holed).\n2. If any ball misses, collect and restart that station until you get 5 in a row.\n3. Move to 9.1 m, then 15.2 m.\n4. Count every ball putted.\n\n**Success criteria:** Total balls putted to complete all three stations (minimum 15).\n\n- Beginner / mid-handicap: use the 3-in-a-row version; complete in ≤ 45 balls\n- Low single digit: 5-in-a-row, ≤ 60 balls\n- Tour level: 5-in-a-row, ≤ 30 balls (Tour average lag leave ≈ 0.7 m)\n- **Pass** = tier target. After 2 passing sessions, shrink the circle to 0.6 m radius.\n\n**Progressions & regressions:**\n\n- Harder: 0.6 m radius; add an 18 m station; choose downhill or double-breaking lines.\n- Easier: 3-in-a-row; 1.2 m radius.\n\n**Common mistakes:**\n\n- Measuring the circle from the hole edge instead of the centre (adds 5.4 cm of free radius).\n- Using the same easy uphill line from all three stations.\n- Rushing the restart balls — each ball needs a full read of pace.\n\n**Diagram:**\n\n```text\n   T 15.2 m          T 12.2 m           T 9.1 m                     ×\n     • ─ ─ ─ ─ ─ ─ ─ ─ ─ • ─ ─ ─ ─ ─ ─ ─ ─ ─ • ─ ─ ─ ─ ─ ─ ─ ─ ─ ▶ ×  O  ×\n                                                                      ×\n   order: 12.2 → 9.1 → 15.2          × = circle marks, 0.9 m radius from hole centre\n```",
-   "builtin": true
-  },
-  {
-   "id": "putt-15-3-putt-avoidance-test-18-holes",
-   "number": 15,
-   "name": "3-Putt Avoidance Test (18 Holes)",
-   "discipline": "putting",
-   "category": "Lag Putting",
-   "minutes": 25,
-   "warmup": false,
-   "rounds": 1,
-   "summary": "The full two-putt job — lag plus clean-up — with every second putt holed out, exactly as on the course.",
-   "equipment": "1 putter · 1 ball · 9 tees · 1 tape measure · pen and card.",
-   "metrics": [
-    {
-     "id": "threePutts",
-     "label": "3-putts",
-     "kind": "count",
-     "max": 18,
-     "better": "lower",
-     "targets": {
-      "beginner": 5,
-      "low": 3,
-      "tour": 2
-     }
-    },
-    {
-     "id": "putts",
-     "label": "Total putts",
-     "kind": "count",
-     "better": "lower"
-    }
-   ],
-   "content": "**Origin:** Common tour/coaching drill. Benchmarks from PGA Tour and Arccos 3-putt data ([MyGolfSpy](https://mygolfspy.com/labs/pros-vs-joes-3-putts/), [GOLF.com](https://golf.com/instruction/putting/how-often-pros-3-putt-pga-tour-stats-2021/)).\n\n**What it trains:** The full two-putt job — lag plus clean-up — with every second putt holed out, exactly as on the course.\n\n**Equipment:** 1 putter · 1 ball · 9 tees · 1 tape measure · pen and card.\n\n**Setup:**\n\n- 9 stations around 1–3 holes at 8, 9, 10, 11, 12, 14, 16, 18 and 20 m.\n- Mix slopes: at least 3 uphill, 3 downhill, 3 sidehill.\n\n**Procedure:**\n\n1. Play each station twice, in a different order the second time (18 holes).\n2. One ball, full routine on every putt, hole out everything — no gimmes.\n3. Record putts per hole.\n\n**Success criteria:** Number of 3-putts in 18 holes.\n\n- Beginner / mid-handicap: ≤ 5 (Arccos 6–15 handicaps 3-putt ≈ 26–27% from 7.6 m+)\n- Low single digit: ≤ 3 (1–5 handicaps ≈ 19.6%)\n- Tour level: ≤ 2 (Tour ≈ 9.6% from 7.6 m+)\n- **Pass** = tier target. After 2 passing sessions, use 12–25 m stations with more downhill putts.\n\n**Progressions & regressions:**\n\n- Harder: 12–25 m stations; double-breakers; play with a partner — lowest 3-putt count wins.\n- Easier: 6–14 m stations.\n\n**Common mistakes:**\n\n- Taking gimmes. A missed 0.6 m second putt is a 3-putt.\n- Choosing only friendly uphill stations.\n- Re-putting a bad lag; the drill only measures if every putt counts.\n\n**Diagram:**\n\n```text\n                    T 18 m\n          T 12 m                 T 9 m\n                                                (mix uphill / downhill / sidehill;\n   T 20 m             O               T 8 m      each station played twice)\n\n          T 16 m                 T 10 m\n                 T 14 m     T 11 m\n```",
-   "builtin": true
-  },
-  {
-   "id": "putt-16-10-lag-window-test",
-   "number": 16,
-   "name": "10% Lag Window Test",
-   "discipline": "putting",
-   "category": "Lag Putting",
-   "minutes": 15,
-   "warmup": false,
-   "rounds": 1,
-   "summary": "Lag proximity scaled to distance, on random lengths and slopes — the way long putts come up on the course.",
-   "equipment": "1 putter · 3 balls · 6 tees · 1 tape measure (≥ 3 m) · pen and card.",
-   "metrics": [
-    {
-     "id": "inside",
-     "label": "Inside 10% window",
-     "kind": "count",
-     "max": 18,
-     "better": "higher",
-     "targets": {
-      "beginner": 6,
-      "low": 9,
-      "tour": 13
-     }
-    },
-    {
-     "id": "short",
-     "label": "Misses short",
-     "kind": "count",
-     "max": 18,
-     "better": "none"
-    }
-   ],
-   "content": "**Origin:** Common tour/coaching drill. The 10% standard comes from Lou Stagner's ShotLink analysis: at the 2025 US Open, the top 10 in strokes gained putting left 77% of first putts inside 10% of the starting distance ([PGA](https://www.pga.info/discover/latest/news/why-setting-realistic-expectations-lag-putting-key-shooting-lower-scores/)).\n\n**What it trains:** Lag proximity scaled to distance, on random lengths and slopes — the way long putts come up on the course.\n\n**Equipment:** 1 putter · 3 balls · 6 tees · 1 tape measure (≥ 3 m) · pen and card.\n\n**Setup:**\n\n- 3 stations at 10, 15 and 20 m from one hole: one uphill, one downhill, one sidehill.\n- Window = 10% of the distance: 1.0 m, 1.5 m, 2.0 m radius from the hole centre. Measure after each putt.\n\n**Procedure:**\n\n1. Putt 3 balls from each station (9 putts), full routine on each, no practice strokes at the ball.\n2. Measure each leave from the hole centre; mark inside or outside the window.\n3. Move the stations to new angles and lengths (e.g. 12, 17, 22 m) and repeat: 18 putts.\n\n**Success criteria:** % of putts inside the 10% window.\n\n- Beginner / mid-handicap: ≥ 30%\n- Low single digit: ≥ 50%\n- Tour level: ≥ 70% (elite benchmark: 77%)\n- Also record short vs long misses; more than 60% short means pace bias, not randomness.\n- **Pass** = tier %. After 2 passing sessions, add downhill stations at 15+ m.\n\n**Progressions & regressions:**\n\n- Harder: all downhill; 25 m stations; one ball per station so every putt is a first look.\n- Easier: 15% window; 8–14 m stations.\n\n**Common mistakes:**\n\n- Estimating leaves instead of measuring.\n- Putting all 3 balls in quick succession from one station — the 2nd and 3rd become easy.\n- Always setting up uphill stations.\n\n**Diagram:**\n\n```text\n   T 20 m (sidehill)                                   window radius\n        •  ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─▶ ( (  O  ) )      10 m → 1.0 m\n   T 15 m (downhill) • ─ ─ ─ ─ ─ ─ ─▶                   15 m → 1.5 m\n   T 10 m (uphill)   • ─ ─ ─ ─ ─ ─ ─▶                   20 m → 2.0 m\n```",
-   "builtin": true
-  },
-  {
-   "id": "putt-17-slope-feel-calibration-aimpoint-method",
-   "number": 17,
-   "name": "Slope-Feel Calibration (AimPoint Method)",
-   "discipline": "putting",
-   "category": "Green Reading",
+   "category": "Lag putting",
    "minutes": 10,
    "warmup": false,
    "rounds": 1,
-   "summary": "Feeling side slope in % through the feet. The eyes are unreliable on subtle slopes; a calibrated slope number is the input for every aim decision.",
-   "equipment": "1 digital level (≥ 40 cm), or a phone level app laid on a straight 40 cm board · 8 tees · pen and card.",
+   "summary": "Lag proximity · Score: points, 0–45, higher is better · Slope: Mixed — station 1 uphill, station 2 downhill, station 3 sidehill",
+   "equipment": "1 putter · 3 balls · 3 station tees · 12 coins or tees for the rings · tape measure.",
+   "hardMode": "stations at 12, 16 and 20 m.",
    "metrics": [
     {
-     "id": "mae",
-     "label": "Mean abs. error",
-     "kind": "number",
-     "unit": "%",
-     "better": "lower",
-     "targets": {
-      "beginner": 1,
-      "low": 0.6,
-      "tour": 0.4
-     }
+     "id": "holed",
+     "label": "Holed (5 pts)",
+     "kind": "count",
+     "max": 9,
+     "better": "higher"
     },
     {
-     "id": "direction",
-     "label": "Direction correct",
+     "id": "r05",
+     "label": "Inside 0.5 m (3 pts)",
      "kind": "count",
-     "max": 16,
+     "max": 9,
+     "better": "higher"
+    },
+    {
+     "id": "r10",
+     "label": "Inside 1.0 m (2 pts)",
+     "kind": "count",
+     "max": 9,
+     "better": "higher"
+    },
+    {
+     "id": "r20",
+     "label": "Inside 2.0 m (1 pt)",
+     "kind": "count",
+     "max": 9,
+     "better": "higher"
+    },
+    {
+     "id": "points",
+     "label": "Points",
+     "kind": "count",
+     "max": 45,
      "better": "higher",
+     "calc": {
+      "terms": [
+       {
+        "id": "holed",
+        "w": 5
+       },
+       {
+        "id": "r05",
+        "w": 3
+       },
+       {
+        "id": "r10",
+        "w": 2
+       },
+       {
+        "id": "r20",
+        "w": 1
+       }
+      ]
+     },
      "targets": {
-      "beginner": 14,
+      "beginner": 10,
       "low": 16,
+      "tour": 22
+     }
+    }
+   ],
+   "content": "**Equipment:** 1 putter · 3 balls · 3 station tees · 12 coins or tees for the rings · tape measure.\n\n**Setup:**\n\n- Stations at 8, 12 and 16 m from one hole (uphill, downhill, sidehill).\n- Three rings round the hole centre, each marked at 4 points (12, 3, 6, 9 o'clock): 0.5 m, 1.0 m and 2.0 m radius.\n\n**Rules:**\n\n1. 3 balls from each station, full routine each (9 balls).\n2. Score each ball where it stops. Measure with the tape when a ball sits near a ring.\n\n**Scoring:** holed = 5 · inside 0.5 m = 3 · inside 1.0 m = 2 · inside 2.0 m = 1 · outside = 0. Tiebreak: more balls inside 0.5 m.\n\n**Targets:** Beginner / mid ≥ 10 · Low single digit ≥ 16 · Tour ≥ 22 (Tour average lag leave ≈ 0.7 m)\n\n**Hard mode:** stations at 12, 16 and 20 m.\n\n```text\n                         ( 2.0 m ring )\n   T 16 m (sidehill)    ( ( 1.0 m ) )\n   T 12 m (downhill)   ( ( ( 0.5 ) ) )\n   T  8 m (uphill)  ─▶ ( ( (  O  ) ) )      holed 5 · 0.5 m 3 · 1.0 m 2 · 2.0 m 1\n```",
+   "builtin": true
+  },
+  {
+   "id": "g12-lag-ladder",
+   "number": 14,
+   "code": "G12",
+   "name": "Lag Ladder",
+   "discipline": "putting",
+   "category": "Lag putting",
+   "minutes": 15,
+   "warmup": false,
+   "rounds": 1,
+   "summary": "Lag under pressure · Score: balls used, 9–75, lower is better · Slope: Any (log it)",
+   "equipment": "1 putter · 3 balls · 3 station tees · 4 coins or tees · tape measure.",
+   "hardMode": "5 in a row per station (Mickelson's full version).",
+   "metrics": [
+    {
+     "id": "s12",
+     "label": "Balls at 12 m",
+     "kind": "count",
+     "better": "lower"
+    },
+    {
+     "id": "s9",
+     "label": "Balls at 9 m",
+     "kind": "count",
+     "better": "lower"
+    },
+    {
+     "id": "s15",
+     "label": "Balls at 15 m",
+     "kind": "count",
+     "better": "lower"
+    },
+    {
+     "id": "total",
+     "label": "Balls used",
+     "kind": "count",
+     "max": 75,
+     "better": "lower",
+     "calc": {
+      "terms": [
+       {
+        "id": "s12",
+        "w": 1
+       },
+       {
+        "id": "s9",
+        "w": 1
+       },
+       {
+        "id": "s15",
+        "w": 1
+       }
+      ]
+     },
+     "targets": {
+      "beginner": 50,
+      "low": 30,
       "tour": 16
      }
     }
    ],
-   "content": "**Origin:** AimPoint Express, developed by Mark Sweeney. Tour players calibrate on practice greens by calling a slope percentage with their feet while a caddie checks a digital level ([USA Today via Yahoo](https://ca.sports.yahoo.com/news/aimpoint-express-why-many-pga-212108528.html)).\n\n**What it trains:** Feeling side slope in % through the feet. The eyes are unreliable on subtle slopes; a calibrated slope number is the input for every aim decision.\n\n**Equipment:** 1 digital level (≥ 40 cm), or a phone level app laid on a straight 40 cm board · 8 tees · pen and card.\n\n**Setup:**\n\n- Choose 8 spots across the green with side slopes between 0.5% and 4%. Mark each with a tee.\n- At each spot, decide an imaginary putt line (e.g. toward the nearest hole).\n\n**Procedure:**\n\n1. Stand on the line, feet shoulder-width apart either side of it, facing along the line.\n2. Close your eyes for 3–5 seconds. Call the side slope to the nearest 0.5% and which side is low (\"1.5, falls right\").\n3. Lay the level across the line (at right angles to it), centred on the tee. Record the true value.\n4. Do all 8 spots, then repeat in a different order: 16 reads.\n\n**Success criteria:** Mean absolute error (MAE) in % and direction calls correct, out of 16.\n\n- Beginner / mid-handicap: MAE ≤ 1.0% · direction ≥ 14/16\n- Low single digit: MAE ≤ 0.6% · direction 16/16\n- Tour level: MAE ≤ 0.4% · direction 16/16\n- **Pass** = both tier numbers. Progress after 2 passing sessions; re-calibrate for 5 minutes before every round.\n\n**Progressions & regressions:**\n\n- Harder: read at the midpoint of real 6–10 m putts; add uphill/downhill % along the line.\n- Easier: first walk 1%, 2% and 3% spots with eyes open while watching the level, then test.\n\n**Common mistakes:**\n\n- Peeking at the green and reading by eye — the drill trains feet, so keep the eyes closed.\n- Measuring along the putt line instead of across it.\n- Standing with feet together; the pressure difference is only felt with a shoulder-width stance.\n\n**Diagram:**\n\n```text\n        T1            T2               T3            (8 spots, 0.5–4% side slope)\n                 T4          T5\n        T6               T7            T8                   O  nearest hole\n\n   At each tee:   foot ▌  │ putt line  ▐ foot     ← level laid ACROSS the line\n                          ▼\n```",
+   "content": "Based on Phil Mickelson's lag drill from 30, 40 and 50 ft, as described by Butch Harmon ([Golf Digest](https://www.golfdigest.com/story/harmon_gd0805)). The 3-in-a-row standard here is the documented short version ([Golf Digest](https://www.golfdigest.com/story/3-tour-secrets-thatll-get-you-making-putts)).\n\n**Equipment:** 1 putter · 3 balls · 3 station tees · 4 coins or tees · tape measure.\n\n**Setup:**\n\n- Stations at 9, 12 and 15 m from one hole.\n- Circle of 0.9 m radius round the hole centre, marked at 4 points.\n\n**Rules:**\n\n1. Start at 12 m. All 3 balls in a row must finish inside the circle (or holed). Any miss → start that station's set again.\n2. Then 9 m, then 15 m.\n3. Count every ball putted. Stop at 75 balls (score = 75, \"not cleared\").\n\n**Scoring:** total balls used to clear all three stations (best possible 9). Tiebreak: fewer balls at 15 m.\n\n**Targets:** Beginner / mid ≤ 50 · Low single digit ≤ 30 · Tour ≤ 16\n\n**Hard mode:** 5 in a row per station (Mickelson's full version).\n\n```text\n   T 15 m            T 12 m             T 9 m                        ×\n     • ─ ─ ─ ─ ─ ─ ─ ─ • ─ ─ ─ ─ ─ ─ ─ ─ ─ • ─ ─ ─ ─ ─ ─ ─ ─ ─ ▶ ×  O  ×\n                                                                     ×\n   order: 12 → 9 → 15 m        × = circle marks, 0.9 m from hole centre\n```",
    "builtin": true
   },
   {
-   "id": "putt-18-aim-tee-read-test",
-   "number": 18,
-   "name": "Aim-Tee Read Test",
+   "id": "g13-slope-sense",
+   "number": 15,
+   "code": "G13",
+   "name": "Slope Sense",
    "discipline": "putting",
-   "category": "Green Reading",
-   "minutes": 15,
+   "category": "Green reading & scoring",
+   "minutes": 8,
    "warmup": false,
    "rounds": 1,
-   "summary": "Turning a read into an aim point, and exposing your read bias (under- or over-reading) in cm, so you know which way to adjust on the course.",
-   "equipment": "1 putter · 3 balls · 6 tees · 1 tape measure · pen and card.",
+   "summary": "Reading (slope feel) · Score: points, 0–24, higher is better · Slope: 8 spots spanning 0.5–4%",
+   "equipment": "1 digital level (≥ 40 cm), or a phone level app on a straight 40 cm board · 8 tees.",
+   "hardMode": "read at the midpoint of real 6–10 m putts instead of chosen spots.",
    "metrics": [
     {
-     "id": "error",
-     "label": "Avg read error",
-     "kind": "number",
-     "unit": "cm",
-     "better": "lower",
-     "targets": {
-      "beginner": 15,
-      "low": 8,
-      "tour": 5
-     }
+     "id": "w025",
+     "label": "Within ±0.25% (3 pts)",
+     "kind": "count",
+     "max": 8,
+     "better": "higher"
     },
     {
-     "id": "makes",
-     "label": "First-read makes",
+     "id": "w05",
+     "label": "Within ±0.5% (2 pts)",
      "kind": "count",
-     "max": 18,
+     "max": 8,
+     "better": "higher"
+    },
+    {
+     "id": "w10",
+     "label": "Within ±1.0% (1 pt)",
+     "kind": "count",
+     "max": 8,
+     "better": "higher"
+    },
+    {
+     "id": "points",
+     "label": "Points",
+     "kind": "count",
+     "max": 24,
      "better": "higher",
+     "calc": {
+      "terms": [
+       {
+        "id": "w025",
+        "w": 3
+       },
+       {
+        "id": "w05",
+        "w": 2
+       },
+       {
+        "id": "w10",
+        "w": 1
+       }
+      ]
+     },
      "targets": {
-      "beginner": 4,
-      "low": 7,
-      "tour": 9
+      "beginner": 10,
+      "low": 16,
+      "tour": 20
      }
     }
    ],
-   "content": "**Origin:** Common tour/coaching drill.\n\n**What it trains:** Turning a read into an aim point, and exposing your read bias (under- or over-reading) in cm, so you know which way to adjust on the course.\n\n**Equipment:** 1 putter · 3 balls · 6 tees · 1 tape measure · pen and card.\n\n**Setup:**\n\n- 3 breaking putts to one hole: 2.5 m, 4.0 m and 6.0 m, each with 1.5–3% side slope.\n- Tee at each ball position.\n\n**Procedure:**\n\n1. Read the 2.5 m putt with your normal routine. Push an aim tee in at your aim point, level with the hole.\n2. Putt 3 balls at the aim tee at your intended speed. Record makes.\n3. Calibrate: move the aim tee 2.5 cm at a time toward the side the balls missed until 2 of 3 putts hole.\n4. Measure the distance from your first aim tee to the calibrated tee. Record it with U (under-read) or O (over-read).\n5. Repeat for 4.0 m and 6.0 m. Then repeat all three putts from the opposite side of the hole (opposite break): 6 reads.\n\n**Success criteria:** Average read error over 6 reads, plus first-read makes (out of 18 balls).\n\n- Beginner / mid-handicap: error ≤ 15 cm · first-read makes ≥ 4\n- Low single digit: error ≤ 8 cm · makes ≥ 7\n- Tour level: error ≤ 5 cm · makes ≥ 9\n- **Pass** = both numbers. 4+ of 6 reads in the same direction = a systematic bias; correct it deliberately in your next session.\n\n**Progressions & regressions:**\n\n- Harder: double-breakers; downhill breakers; read with one look only (Drill 23 routine).\n- Easier: 2.5 m and 4.0 m only; 1–2% slopes.\n\n**Common mistakes:**\n\n- Changing speed during calibration — a firmer putt needs less break, so the result is meaningless.\n- Placing the aim tee nearer or farther than the hole's distance.\n- Moving the tee by feel instead of in fixed 2.5 cm steps.\n\n**Diagram:**\n\n```text\n   HIGH SIDE\n                                   T₁  first-read aim tee\n                                   ↕  read error (cm)\n                                   T₂  calibrated aim tee (2 of 3 holed)\n   •  ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ⌒\n                                    ⌒  O  hole\n   |←────── 2.5 / 4.0 / 6.0 m ─────→|\n   LOW SIDE\n```",
+   "content": "Based on AimPoint Express (Mark Sweeney): Tour players call a slope % with their feet while a caddie checks a digital level ([USA Today via Yahoo](https://ca.sports.yahoo.com/news/aimpoint-express-why-many-pga-212108528.html)).\n\n**Equipment:** 1 digital level (≥ 40 cm), or a phone level app on a straight 40 cm board · 8 tees.\n\n**Setup:**\n\n- 8 spots across the green with side slopes between 0.5% and 4%, each marked with a tee. Pick an imaginary putt line at each (e.g. toward the nearest hole).\n\n**Rules:**\n\n1. Stand on the line, feet shoulder-width either side of it, facing along it. Close your eyes for 3–5 seconds.\n2. Call the side slope to the nearest 0.5% and the low side (\"2.0, falls left\").\n3. Lay the level across the line, centred on the tee, and record the true value.\n\n**Scoring:** wrong low side = 0 · within ±0.25% = 3 · within ±0.5% = 2 · within ±1.0% = 1 · beyond = 0. Tiebreak: lower total error in %.\n\n**Targets:** Beginner / mid ≥ 10 · Low single digit ≥ 16 · Tour ≥ 20\n\n**Hard mode:** read at the midpoint of real 6–10 m putts instead of chosen spots.\n\n```text\n        T1            T2              T3          (8 spots, 0.5–4% side slope)\n                T4          T5\n        T6              T7            T8                  O\n\n   At each tee:   foot ▌  │ putt line  ▐ foot     level laid ACROSS the line\n```",
    "builtin": true
   },
   {
-   "id": "putt-19-fall-line-clock",
-   "number": 19,
+   "id": "g14-fall-line-clock",
+   "number": 16,
+   "code": "G14",
    "name": "Fall-Line Clock",
    "discipline": "putting",
-   "category": "Green Reading",
+   "category": "Green reading & scoring",
    "minutes": 10,
    "warmup": false,
    "rounds": 1,
-   "summary": "Finding the fall line (the straight uphill and downhill putt through the hole), then reading every direction around it. Every break read is relative to this line.",
-   "equipment": "1 putter · 8 balls · 8 tees · 1 tape measure · optional level.",
+   "summary": "Reading + short putts · Score: makes, 0–16, higher is better · Slope: Hole on a 2–3% slope",
+   "equipment": "1 putter · 1 ball · 8 tees · tape measure.",
+   "hardMode": "clock at 2.1 m.",
    "metrics": [
     {
      "id": "makes",
@@ -712,163 +795,36 @@
      }
     },
     {
-     "id": "lowMisses",
-     "label": "Low-side misses",
+     "id": "low",
+     "label": "Misses low side",
      "kind": "count",
      "max": 16,
      "better": "lower"
-    }
-   ],
-   "content": "**Origin:** Common tour/coaching drill.\n\n**What it trains:** Finding the fall line (the straight uphill and downhill putt through the hole), then reading every direction around it. Every break read is relative to this line.\n\n**Equipment:** 1 putter · 8 balls · 8 tees · 1 tape measure · optional level.\n\n**Setup:**\n\n- A hole on a 2–3% slope.\n- Find the fall line: from 1.0 m below the hole, putt balls gently from slightly different positions until one rolls dead straight in. That line is 6 o'clock; the line above the hole is 12 o'clock.\n- 8 tees at 1.5 m from the hole centre: 12, 1:30, 3, 4:30, 6, 7:30, 9 and 10:30 o'clock.\n\n**Procedure:**\n\n1. At each tee: read without a trial putt, say your aim out loud (e.g. \"left edge\", \"1 ball outside right\"), then putt once.\n2. Record make or miss, and miss side: high or low.\n3. Go round the clock twice (16 putts), starting the second lap at a different tee.\n\n**Success criteria:** Makes out of 16, plus share of misses on the low side.\n\n- Beginner / mid-handicap: ≥ 8/16\n- Low single digit: ≥ 11/16\n- Tour level: ≥ 13/16 (Tour make rate from 1.5 m on the course: 80.7%)\n- Low-side misses should be ≤ 30% of all misses at every level.\n- **Pass** = tier makes and the low-side limit. After 2 passing sessions, move the clock to 2.1 m.\n\n**Progressions & regressions:**\n\n- Harder: 2.1 m or 2.4 m clock; steeper hole (3–4%).\n- Easier: 1.0 m clock; 1–2% slope.\n\n**Common mistakes:**\n\n- Skipping the fall-line step and guessing 12 and 6 o'clock by eye.\n- Trial putts before scoring — the first putt is the test.\n- Not recording miss side; it is the most useful data in the drill.\n\n**Diagram:**\n\n```text\n                      12 T          (12 = straight downhill putt)\n             10:30 T          T 1:30\n                                            all tees 1.5 m\n           9 T          O          T 3      from hole centre\n\n              7:30 T          T 4:30\n                       6 T          (6 = straight uphill putt)\n   HIGH ↑  fall line runs 12 → 6  ↓ LOW\n```",
-   "builtin": true
-  },
-  {
-   "id": "putt-20-mickelson-0-9-m-circle-100-in-a-row",
-   "number": 20,
-   "name": "Mickelson 0.9 m Circle (100 in a Row)",
-   "discipline": "putting",
-   "category": "Short Putts & Pressure",
-   "minutes": 15,
-   "warmup": false,
-   "rounds": 1,
-   "summary": "Automatic short putts from every break direction, with rising pressure as the streak grows. Tour players make 99.4% from 0.9 m; one miss per 100 is the standard.",
-   "equipment": "1 putter · 10 balls · 10 tees.",
-   "metrics": [
-    {
-     "id": "streak",
-     "label": "Best streak",
-     "kind": "count",
-     "max": 100,
-     "better": "higher",
-     "targets": {
-      "beginner": 25,
-      "low": 50,
-      "tour": 100
-     }
-    }
-   ],
-   "content": "**Origin:** Phil Mickelson, learned from Jackie Burke Jr. He sets 10 tees in a 3-ft circle around the hole and stays until he makes 100 in a row, restarting after any miss ([GOLF.com](https://golf.com/instruction/phil-mickelson-key-3-footer-play-smart/), [Golf Compendium](https://golfcompendium.com/2023/01/circle-putting-drills.html)).\n\n**What it trains:** Automatic short putts from every break direction, with rising pressure as the streak grows. Tour players make 99.4% from 0.9 m; one miss per 100 is the standard.\n\n**Equipment:** 1 putter · 10 balls · 10 tees.\n\n**Setup:**\n\n- A hole with 1–2% slope so the putts break in different directions.\n- 10 tees in a circle 0.9 m from the hole centre, evenly spaced (≈ 0.57 m apart).\n\n**Procedure:**\n\n1. Place a ball at each tee. Putt round the circle, full routine on every putt.\n2. Reload all 10 balls and keep going.\n3. Any miss: streak back to 0, start again from the next tee.\n4. Stop at 100 in a row or after 20 minutes. Record best streak.\n\n**Success criteria:** Best consecutive makes in 20 minutes.\n\n- Beginner / mid-handicap: ≥ 25\n- Low single digit: ≥ 50\n- Tour level: 100 (Mickelson's standard)\n- **Pass** = tier streak. After 2 passing sessions, move the circle to 1.2 m.\n\n**Progressions & regressions:**\n\n- Harder: 1.2 m circle; steeper hole (2–3%); the 50th and 100th putt must be \"must-make\" with a consequence (e.g. restart the session).\n- Easier: 0.6 m circle, target 30 in a row.\n\n**Common mistakes:**\n\n- Choosing a flat hole, so every putt is the same.\n- Dropping the routine once the streak is going — the routine is part of what is being trained.\n- Raking the next ball into place and putting immediately; reset fully each time.\n\n**Diagram:**\n\n```text\n                 T     T\n             T             T\n            T       O       T        10 tees, 0.9 m from hole centre\n             T             T         (≈ 0.57 m apart, hole on 1–2% slope)\n                 T     T\n```",
-   "builtin": true
-  },
-  {
-   "id": "putt-21-short-putt-strokes-gained-test-1-2-2-4-m",
-   "number": 21,
-   "name": "Short-Putt Strokes-Gained Test (1.2–2.4 m)",
-   "discipline": "putting",
-   "category": "Short Putts & Pressure",
-   "minutes": 15,
-   "warmup": false,
-   "rounds": 3,
-   "summary": "Performance in the 1.2–2.4 m range, where Tour make rates fall from 91% to 53% and where most amateur strokes are lost. Scoring against the Tour gives an honest strokes-gained number.",
-   "equipment": "1 putter · 1 ball · 10 tees · 1 tape measure · pen and card.",
-   "metrics": [
-    {
-     "id": "makes",
-     "label": "Makes (of 10)",
-     "kind": "count",
-     "max": 10,
-     "better": "higher",
-     "aggregate": "avg",
-     "par": 7.1,
-     "targets": {
-      "beginner": 4.5,
-      "low": 6,
-      "tour": 7.1
-     }
-    }
-   ],
-   "content": "**Origin:** Common tour/coaching drill. Scored against PGA Tour make % by distance ([GOLF.com](https://golf.com/instruction/putting/pga-tour-putting-make-percentages-distance/)).\n\n**What it trains:** Performance in the 1.2–2.4 m range, where Tour make rates fall from 91% to 53% and where most amateur strokes are lost. Scoring against the Tour gives an honest strokes-gained number.\n\n**Equipment:** 1 putter · 1 ball · 10 tees · 1 tape measure · pen and card.\n\n**Setup:**\n\n- A hole with 1–2% slope.\n- 10 tees: 2 each at 1.2, 1.5, 1.8, 2.1 and 2.4 m. At each distance, one putt breaks left-to-right and one right-to-left.\n\n**Procedure:**\n\n1. One ball, full routine, one attempt per tee.\n2. Record make or miss.\n3. 3 rounds (30 putts); change the order each round.\n\n**Success criteria:** Makes per round of 10. Tour expectation = 7.1 (sum of Tour make % at these distances). Strokes gained per round = makes − 7.1.\n\n- Beginner / mid-handicap: average ≥ 4.5\n- Low single digit: average ≥ 6.0\n- Tour level: average ≥ 7.1\n- **Pass** = tier average over 3 rounds. After 2 passing sessions, add a 2.7 m and 3.0 m pair (Tour expectation then 8.9 for 14 putts).\n\n**Progressions & regressions:**\n\n- Harder: move to a 2–3% hole; one round only with a consequence for a negative score.\n- Easier: 8 putts, 2 each at 0.9, 1.2, 1.5 and 1.8 m (Tour expectation 6.8).\n\n**Common mistakes:**\n\n- Re-putting misses \"to feel it\" — the test is first attempts only.\n- Only straight putts; the breaking ones are where the strokes go.\n- Comparing to friends instead of the Tour baseline; the number only means something against the baseline.\n\n**Diagram:**\n\n```text\n              2.4 T                      T 2.4\n                 2.1 T                T 2.1\n                    1.8 T          T 1.8          (one of each pair on each\n                       1.5 T    T 1.5              side of the fall line:\n                          1.2 T T 1.2              L-to-R and R-to-L)\n                              O\n```",
-   "builtin": true
-  },
-  {
-   "id": "putt-22-escalation-ladder-reset-on-miss",
-   "number": 22,
-   "name": "Escalation Ladder (Reset on Miss)",
-   "discipline": "putting",
-   "category": "Short Putts & Pressure",
-   "minutes": 15,
-   "warmup": false,
-   "rounds": 1,
-   "summary": "Holing under consequence. A miss sends you back to the start, so the last putts carry the weight of everything before them — the closest practice gets to a must-make putt.",
-   "equipment": "1 putter · 4 balls · 12 tees · timer.",
-   "metrics": [
-    {
-     "id": "run",
-     "label": "Best run",
-     "kind": "count",
-     "max": 12,
-     "better": "higher",
-     "targets": {
-      "beginner": 8,
-      "low": 12,
-      "tour": 12
-     }
     },
     {
-     "id": "completions",
-     "label": "Completions",
+     "id": "high",
+     "label": "Misses high side",
      "kind": "count",
-     "better": "higher",
-     "targets": {
-      "low": 1,
-      "tour": 1
-     }
+     "max": 16,
+     "better": "none"
     }
    ],
-   "content": "**Origin:** Common tour/coaching drill.\n\n**What it trains:** Holing under consequence. A miss sends you back to the start, so the last putts carry the weight of everything before them — the closest practice gets to a must-make putt.\n\n**Equipment:** 1 putter · 4 balls · 12 tees · timer.\n\n**Setup:**\n\n- A hole with 1–2% slope.\n- 4 lines (N, E, S, W) out from the hole, with tees at 0.9, 1.2 and 1.5 m on each line (12 tees).\n\n**Procedure:**\n\n1. Make 0.9 m from N, E, S, W.\n2. Then 1.2 m from all four, then 1.5 m from all four: 12 in a row.\n3. Any miss: restart at 0.9 m N.\n4. Time limit 15 minutes. Record best run and completions.\n\n**Success criteria:** Best consecutive makes (max 12) and completions in 15 minutes.\n\n- Beginner / mid-handicap: best run ≥ 8 (into the 1.5 m ring)\n- Low single digit: 1 completion in 15 minutes\n- Tour level: completion within the first 3 attempts\n- **Pass** = tier target. After 2 passing sessions, use 1.2 / 1.5 / 1.8 m.\n\n**Progressions & regressions:**\n\n- Harder: 1.2 / 1.5 / 1.8 m; partner watches and you announce each putt's line before hitting.\n- Easier: 0.6 / 0.9 / 1.2 m; restart only at the start of the current ring.\n\n**Common mistakes:**\n\n- Not restarting honestly after a lip-out.\n- Speeding up the routine when the run gets long — that is exactly the habit to break.\n- A hole on flat ground; the four lines need different breaks.\n\n**Diagram:**\n\n```text\n                    T 1.5\n                    T 1.2\n                    T 0.9          N\n   W  T  T  T       O       T  T  T  E\n     1.5 1.2 0.9            0.9 1.2 1.5\n                    T 0.9\n                    T 1.2          S\n                    T 1.5\n   order: 0.9 (N, E, S, W) → 1.2 (N, E, S, W) → 1.5 (N, E, S, W); miss = back to 0.9 N\n```",
+   "content": "**Equipment:** 1 putter · 1 ball · 8 tees · tape measure.\n\n**Setup:**\n\n- A hole on a 2–3% slope.\n- Find the fall line: from 1.0 m below the hole, roll putts from slightly different spots until one goes in dead straight. That line is 6 o'clock (uphill); straight above the hole is 12 o'clock (downhill).\n- 8 tees 1.5 m from the hole centre at 12, 1:30, 3, 4:30, 6, 7:30, 9 and 10:30.\n\n**Rules:**\n\n1. One putt per tee, no trial putts, full routine. Say your aim before putting.\n2. Two laps (16 putts); start lap 2 at a different tee.\n3. Note each miss as high side or low side.\n\n**Scoring:** total makes. Tiebreak: fewer low-side misses.\n\n**Targets:** Beginner / mid ≥ 8 · Low single digit ≥ 11 · Tour ≥ 13 (Tour makes 80.7% from 1.5 m)\n\n**Hard mode:** clock at 2.1 m.\n\n```text\n                      12 T          (12 = straight downhill)\n             10:30 T          T 1:30\n           9 T          O          T 3      all tees 1.5 m from hole centre\n              7:30 T          T 4:30\n                       6 T          (6 = straight uphill)\n```",
    "builtin": true
   },
   {
-   "id": "putt-23-stockton-routine-drill",
-   "number": 23,
-   "name": "Stockton Routine Drill",
+   "id": "g15-putting-round",
+   "number": 17,
+   "code": "G15",
+   "name": "Putting Round",
    "discipline": "putting",
-   "category": "Routine & Transfer to the Course",
-   "minutes": 15,
-   "warmup": false,
-   "rounds": 1,
-   "summary": "A short, identical routine that keeps the target picture fresh and cuts time over the ball. Routine is what carries practice-green skill onto the course.",
-   "equipment": "1 putter · 1 ball · 6 tees · phone set on your bag to video the putts (for timing) · pen and card.",
-   "metrics": [
-    {
-     "id": "routine",
-     "label": "Routine points",
-     "kind": "count",
-     "max": 18,
-     "better": "higher",
-     "targets": {
-      "beginner": 13,
-      "low": 16,
-      "tour": 18
-     }
-    },
-    {
-     "id": "range",
-     "label": "Timing range",
-     "kind": "number",
-     "unit": "s",
-     "better": "lower",
-     "targets": {
-      "beginner": 4,
-      "low": 2.5,
-      "tour": 1.5
-     }
-    }
-   ],
-   "content": "**Origin:** Dave Stockton (*Unconscious Putting*). He reads from the low side only, takes no practice stroke at the ball (if one is needed, a few feet back while looking at the line), and strokes soon after addressing the ball ([GolfMagic](https://www.golfmagic.com/instruction/putting/putting-learn-the-stockton-way/9031), [Golf Digest](https://www.golfdigest.com/story/dave-stockton-green-reading-tips)).\n\n**What it trains:** A short, identical routine that keeps the target picture fresh and cuts time over the ball. Routine is what carries practice-green skill onto the course.\n\n**Equipment:** 1 putter · 1 ball · 6 tees · phone set on your bag to video the putts (for timing) · pen and card.\n\n**Setup:**\n\n- 6 stations around 2–3 holes: 2.0, 3.5, 5.0, 7.0, 9.0 and 12.0 m, with different breaks.\n\n**Procedure:**\n\n1. At each station run the routine exactly:\n   1. Read from behind the ball, then from the low side of the putt (never the high side).\n   2. Pick the line and the entry point on the edge of the hole.\n   3. Optional: one rehearsal stroke about 1 m behind the ball, looking at the hole, not the ball.\n   4. Walk in, set the putter, set the feet, one look at the hole, stroke.\n2. One putt per station, hole out.\n3. 3 rounds (18 putts).\n4. From the video, time each putt from putter grounded to start of backstroke.\n\n**Success criteria:** Routine points (1 per putt with all steps in order, no restart; max 18) and timing range (slowest minus fastest address-to-stroke time).\n\n- Beginner / mid-handicap: ≥ 13/18 · range ≤ 4 s\n- Low single digit: ≥ 16/18 · range ≤ 2.5 s\n- Tour level: 18/18 · range ≤ 1.5 s\n- **Pass** = both tier numbers. Once passed, use the routine on every scored putt in Drills 15, 21 and 24.\n\n**Progressions & regressions:**\n\n- Harder: partner calls a random station and starts a 20-second clock from the moment you reach the ball; add a consequence for a broken routine.\n- Easier: 3 stations (2, 5, 9 m); skip the timing for the first 2 sessions.\n\n**Common mistakes:**\n\n- Adding extra looks on the important-feeling putts — the timing range exposes it.\n- Practice strokes beside the ball looking down at it; Stockton's point is to keep the eyes on the target picture.\n- Reading from the high side as well \"to be sure\".\n\n**Diagram:**\n\n```text\n           5.0 m T                       T 9.0 m\n                         O  hole 1\n   2.0 m T                                    T 12.0 m\n                 O  hole 2\n           3.5 m T                 T 7.0 m\n\n   Routine at every tee:  behind → LOW side → line + entry point → (rehearsal 1 m back,\n                          eyes on hole) → walk in → one look → stroke\n```",
-   "builtin": true
-  },
-  {
-   "id": "putt-24-18-hole-practice-green-course-vs-tour",
-   "number": 24,
-   "name": "18-Hole Practice-Green Course vs Tour",
-   "discipline": "putting",
-   "category": "Routine & Transfer to the Course",
+   "category": "Green reading & scoring",
    "minutes": 20,
    "warmup": false,
    "rounds": 1,
-   "summary": "Scoring with one ball, no repeats, on every type of putt — the closest practice-green version of a round. It shows where your strokes go by distance.",
-   "equipment": "1 putter · 1 ball · 18 tees (or 9, used twice) · 1 tape measure · pen and card.",
+   "summary": "Scoring (all skills) · Score: total putts, lower is better · Slope: Mixed — at least 6 uphill, 6 downhill, 6 sidehill holes",
+   "equipment": "1 putter · 1 ball · 18 tees (or 9 used twice) · tape measure.",
+   "hardMode": "replace both 0.9 m holes with 2.4 m holes (Tour par ≈ 30.9).",
    "metrics": [
     {
      "id": "total",
@@ -881,6 +837,13 @@
       "low": 33,
       "tour": 30
      }
+    },
+    {
+     "id": "threePutts",
+     "label": "3-putts",
+     "kind": "count",
+     "max": 18,
+     "better": "lower"
     },
     {
      "id": "short",
@@ -897,58 +860,7 @@
      "par": 19.7
     }
    ],
-   "content": "**Origin:** Common tour/coaching drill. Tour expected score built from PGA Tour make % by distance and Mark Broadie's strokes-gained putting baseline (≈ 1.87 putts from 6 m, ≈ 2.14 from 15 m).\n\n**What it trains:** Scoring with one ball, no repeats, on every type of putt — the closest practice-green version of a round. It shows where your strokes go by distance.\n\n**Equipment:** 1 putter · 1 ball · 18 tees (or 9, used twice) · 1 tape measure · pen and card.\n\n**Setup:**\n\n- 18 holes: 2 each at 0.9, 1.5, 2.1, 3.0, 4.5, 6.0, 9.0, 12.0 and 15.0 m.\n- Spread them around 3–4 holes with a mix of uphill, downhill and sidehill putts. Write the card (hole number, distance, slope) before you start.\n\n**Procedure:**\n\n1. Play holes 1–18 in order, one ball, full routine (Drill 23), hole out everything.\n2. Record putts per hole.\n3. Total the score; also total separately for the 0.9–3.0 m holes and the 4.5–15 m holes.\n\n**Success criteria:** Total putts for 18 holes. Tour expectation ≈ 30 (≈ 10.4 for the eight 0.9–3.0 m holes; ≈ 19.7 for the ten 4.5–15 m holes).\n\n- Beginner / mid-handicap: ≤ 36\n- Low single digit: ≤ 33\n- Tour level: ≤ 30\n- **Pass** = tier score twice in a row. Then build a new card with more downhill and double-breaking holes.\n\n**Progressions & regressions:**\n\n- Harder: play a match against a partner on the same card; replace the 0.9 m holes with 2.4 m holes.\n- Easier: 9 holes (one of each distance), target half the tier score.\n\n**Common mistakes:**\n\n- Taking a second attempt after a bad putt — one ball, one score.\n- Picking easy, uphill-only holes.\n- Not splitting the score by distance, which hides whether the problem is lag or short putts.\n\n**Diagram:**\n\n```text\n   Card:  H1 0.9  H2 6.0  H3 2.1  H4 12.0  H5 1.5  H6 9.0  H7 3.0  H8 15.0  H9 4.5\n          H10–18 = same distances, different holes and slopes\n\n          T 15 m                 T 9 m\n                  O A                     T 1.5 m\n          T 2.1 m        T 4.5 m      O B\n                  T 0.9 m                 T 12 m\n          T 6 m          O C          T 3 m\n```",
-   "builtin": true
-  },
-  {
-   "id": "putt-25-10-minute-pre-round-calibration",
-   "number": 25,
-   "name": "10-Minute Pre-Round Calibration",
-   "discipline": "putting",
-   "category": "Routine & Transfer to the Course",
-   "minutes": 10,
-   "warmup": true,
-   "rounds": 1,
-   "summary": "Calibrating to the day's green speed and checking start line in 10 minutes, without technical tinkering — the bridge from practice to the first tee.",
-   "equipment": "1 putter · 3 balls · 4 tees · timer.",
-   "metrics": [
-    {
-     "id": "lag",
-     "label": "Lags inside window",
-     "kind": "count",
-     "max": 9,
-     "better": "higher",
-     "targets": {
-      "beginner": 3,
-      "low": 5,
-      "tour": 7
-     }
-    },
-    {
-     "id": "gate",
-     "label": "Gate passes",
-     "kind": "count",
-     "max": 10,
-     "better": "higher",
-     "targets": {
-      "beginner": 6,
-      "low": 8,
-      "tour": 9
-     }
-    },
-    {
-     "id": "short",
-     "label": "Short block done in 10 min",
-     "kind": "boolean",
-     "better": "higher",
-     "targets": {
-      "beginner": 1,
-      "low": 1,
-      "tour": 1
-     }
-    }
-   ],
-   "content": "**Origin:** Common tour/coaching protocol. The sequence (gate putts first, then mid-length and long putts, short putts last) mirrors the Tiger Woods warm-up GOLF.com logged minute by minute ([GOLF.com](https://golf.com/instruction/short-game/tiger-woods-warm-up-practice-routine/)).\n\n**What it trains:** Calibrating to the day's green speed and checking start line in 10 minutes, without technical tinkering — the bridge from practice to the first tee.\n\n**Equipment:** 1 putter · 3 balls · 4 tees · timer.\n\n**Setup:**\n\n- Lag station: tees 12 m and 18 m from a hole; one uphill, one downhill, one across slope.\n- Gate station: straight 1.5 m putt, gate 0.3 m in front of the ball with a 5.5 cm inner gap.\n- Short station: any hole, 6 ball positions at 1.0 m around it.\n\n**Procedure:**\n\n1. Minutes 0–4 — lags: 3 balls uphill 12 m, 3 balls downhill 12 m, 3 balls across 18 m. Count balls inside 10% of the distance (1.2 m / 1.8 m).\n2. Minutes 4–7 — gate: 10 putts through the gate, count clean passes.\n3. Minutes 7–10 — short: 6 putts at 1.0 m around the hole. Keep going until 6 in a row hole; the last putt before the first tee must go in.\n\n**Success criteria:** Lag balls inside the window (of 9), gate passes (of 10), and finishing the short block within the 10 minutes.\n\n- Beginner / mid-handicap: lag ≥ 3 · gate ≥ 6\n- Low single digit: lag ≥ 5 · gate ≥ 8\n- Tour level: lag ≥ 7 · gate ≥ 9\n- **Pass** = tier numbers, no technical changes made, done in ≤ 10 minutes. Log the lag result each round; if it is below your normal, expect slower or faster greens than you feel and play the first holes more conservatively.\n\n**Progressions & regressions:**\n\n- Harder: lags from 20 m+ in the direction of the most severe slope; 5.0 cm gate.\n- Easier: 6 lag balls (12 m only); 6.5 cm gate.\n\n**Common mistakes:**\n\n- Working on mechanics before a round — this is calibration, not practice.\n- Skipping the lags and only hitting short putts; speed is what changes from course to course.\n- Leaving the green on a miss.\n\n**Diagram:**\n\n```text\n   LAG (0–4 min)          GATE (4–7 min)                 SHORT (7–10 min)\n   T 18 m across            |                                 •\n   T 12 m up      ▶ O     • ─0.3 m─▶  ─ 1.2 m ─▶ O        •   O   •   (6 balls at 1.0 m)\n   T 12 m down              |  (5.5 cm gap)                  •   •\n```",
+   "content": "**Equipment:** 1 putter · 1 ball · 18 tees (or 9 used twice) · tape measure.\n\n**Setup:**\n\n- 18 holes: 2 each at 0.9, 1.5, 2.1, 3.0, 4.5, 6.0, 9.0, 12.0 and 15.0 m, spread round 3–4 holes.\n- Enter the card in the app first (hole, distance, slope), so the round can be replayed on the same green.\n\n**Rules:**\n\n1. Play holes 1–18 in order. One ball, full routine, hole out everything — no gimmes, no second tries.\n2. Record putts per hole.\n\n**Scoring:** total putts. Tour \"par\" ≈ 30: about 10.4 for the eight 0.9–3.0 m holes and 19.7 for the ten 4.5–15 m holes, from Tour make % and Mark Broadie's strokes-gained baseline. Tiebreak: fewer 3-putts.\n\n**Targets:** Beginner / mid ≤ 36 · Low single digit ≤ 33 · Tour ≤ 30\n\n**Hard mode:** replace both 0.9 m holes with 2.4 m holes (Tour par ≈ 30.9).\n\n```text\n   Card:  H1 0.9  H2 6.0  H3 2.1  H4 12.0  H5 1.5  H6 9.0  H7 3.0  H8 15.0  H9 4.5\n          H10–18 = same distances, different holes and slopes\n\n          T 15 m                 T 9 m\n                  O A                     T 1.5 m\n          T 2.1 m        T 4.5 m      O B\n                  T 0.9 m                 T 12 m\n          T 6 m          O C          T 3 m\n```",
    "builtin": true
   }
  ]

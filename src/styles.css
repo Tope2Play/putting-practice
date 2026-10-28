@@ -247,3 +247,14 @@ table.targets .mine { background: var(--brand-soft); font-weight: 700; }
 .tabs .ti { font-size: 20px; line-height: 1; filter: grayscale(1); opacity: 0.7; }
 .tabs button.on .ti { filter: none; opacity: 1; }
 .dot-live { position: absolute; top: 8px; right: calc(50% - 16px); width: 8px; height: 8px; border-radius: 50%; background: var(--warm); }
+
+/* Games */
+.code { color: var(--muted); font-weight: 600; margin-right: 6px; }
+h1.title .code { font-size: 0.7em; vertical-align: 0.15em; }
+.stats.two { grid-template-columns: repeat(2, 1fr); }
+.caller { text-align: center; }
+.caller-value { font-size: 56px; font-weight: 800; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.caller .btn { margin-top: 12px; }
+.options .kv { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.options .toggle { margin: 12px 0 2px; }
+.seg.small button { padding: 8px 12px; font-size: 14px; }

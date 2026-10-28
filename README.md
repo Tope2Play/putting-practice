@@ -4,8 +4,10 @@ A phone-first web app (PWA) for planning putting and chipping practice, logging 
 
 ## Features
 
-- **Drill library**: the 25 drills from `docs/putting-drill-library.md`, with full instructions, diagrams and targets for three levels (Beginner/mid, Low single digit, Tour).
-- **Plan by time**: pick how many minutes you have; the app starts with a warm-up drill and fills the rest, favouring drills you haven't done lately or haven't passed yet. Swap, remove or add drills before starting.
+- **Drill library**: 2 unscored warm-up stations and 15 scored games from `docs/warmup-and-games.md`, with full instructions, diagrams and targets for three levels (Beginner/mid, Low single digit, Tour). Points for band-scored games (e.g. Lag Darts: holed 5, inside 0.5 m 3 …) are computed from how many balls landed in each band.
+- **Hard mode and green speed**: each result can be flagged Hard mode (listed in history, kept out of high scores and pass streaks) and tagged Slow/Medium/Fast green.
+- **Target caller**: Distance Call has a button that calls a random target per ball.
+- **Plan by time**: pick how many minutes you have; the app starts with the warm-up (both stations from 30 min, one below) and fills the rest with games, favouring drills you haven't done lately or haven't passed yet. Swap, remove or add drills before starting.
 - **Session mode**: one drill at a time with a timer, instructions and score entry; summary at the end with passes and new bests.
 - **Scoring types**: makes out of N, best streak, balls/putts needed to finish, score vs par, decimals (cm, %, seconds), yes/no, multiple rounds (total, average, best or worst round).
 - **Progress**: high score, pass streak ("two passes in a row → level up"), chart per score, weekly practice streak, history.
@@ -34,10 +36,12 @@ Pushing to `main` deploys to GitHub Pages via `.github/workflows/deploy.yml` (en
 
 The built-in drills are generated from Markdown:
 
-- `docs/putting-drill-library.md`: drill text (each drill is a `### Drill N — Name` section under a `## Category k — Name` heading)
-- `scripts/drill-meta.mjs`: scoring per drill (scores, targets, minutes, rounds, warm-up flag)
+- `docs/warmup-and-games.md`: drill text (`### W1 · Name (7 min)` / `### G1 · Name` sections under `## Warm-up …` / `## Games — Category` headings)
+- `scripts/games-meta.mjs`: scoring per drill (scores, point bands, targets, minutes, rounds, warm-up flag)
 
-After editing either file, run `npm run import-library` and bump `version` in the generated `src/data/library.json` so existing installs pick up new drills.
+After editing either file, bump `LIBRARY_VERSION` in `scripts/import-library.mjs` and run `npm run import-library`. Installed apps then add new built-in drills and drop removed ones (unless results were logged on them).
+
+The earlier 25-drill library and its scoring setup are kept in `docs/archive/` and `scripts/archive/` for later.
 
 ### Project layout
 

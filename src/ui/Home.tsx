@@ -64,6 +64,7 @@ export function Home() {
                     <div class="row-title">
                       {d.name}
                       {pb && <span class="tag pb">★ PB</span>}
+                      {r.hard && <span class="tag warm">Hard</span>}
                     </div>
                     <div class="row-sub">{relDate(r.date)}</div>
                   </div>

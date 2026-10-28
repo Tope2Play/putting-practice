@@ -1,12 +1,19 @@
 import { useState } from 'preact/hooks';
 import { navigate } from '../router';
-import { drillResults, drillStats, formatPar, formatTarget, formatValue, metricValue, parIsGood, passed, primaryMetric } from '../scoring';
+import { drillResults, drillStats, formatPar, formatTarget, formatValue, isComputed, metricValue, parIsGood, passed, primaryMetric } from '../scoring';
 import { actions, uid, useStore } from '../store';
-import { LEVELS, type Drill } from '../types';
+import { LEVELS, SPEEDS, type Drill } from '../types';
 import { shareJSON } from '../share';
 import { Chart } from './Chart';
 import { Empty, Header, relDate } from './common';
 import { Markdown } from './Markdown';
+
+/** The scores worth showing per history row: computed totals first, then other scored inputs. */
+function historyMetrics(drill: Drill) {
+  const totals = drill.metrics.filter(isComputed);
+  const shown = totals.length ? totals : drill.metrics.filter((m) => m.better !== 'none');
+  return shown.slice(0, 3);
+}
 
 export function DrillDetail({ id }: { id: string }) {
   const { drills, results, settings } = useStore();
@@ -39,20 +46,27 @@ export function DrillDetail({ id }: { id: string }) {
   return (
     <div class="page">
       <Header title="" backTo="/drills" right={<button class="link" onClick={() => navigate(`/drill/${drill.id}/edit`)}>Edit</button>} />
-      <h1 class="title">{drill.name}</h1>
+      <h1 class="title">{drill.code && <span class="code">{drill.code}</span>}{drill.name}</h1>
       <p class="muted">
         {drill.category} · {drill.minutes} min{drill.rounds > 1 ? ` · ${drill.rounds} rounds` : ''}
         {drill.warmup && <span class="tag warm">warm-up</span>}
       </p>
       {drill.summary && <p>{drill.summary}</p>}
 
-      <button class="btn primary big" onClick={() => navigate(`/log/${drill.id}`)}>Log result</button>
+      <button class="btn primary big" onClick={() => navigate(`/log/${drill.id}`)}>{drill.metrics.length ? 'Log result' : 'Mark done'}</button>
 
-      <div class="stats">
-        <div class="stat"><b>{s.best && pm ? formatValue(drill, pm, s.best.value) : '–'}</b><span>high score</span></div>
-        <div class="stat"><b>{s.count}</b><span>times done</span></div>
-        <div class="stat"><b>{s.passStreak}</b><span>passes in a row</span></div>
-      </div>
+      {drill.metrics.length ? (
+        <div class="stats">
+          <div class="stat"><b>{s.best && pm ? formatValue(drill, pm, s.best.value) : '–'}</b><span>high score</span></div>
+          <div class="stat"><b>{s.count}</b><span>times done</span></div>
+          <div class="stat"><b>{s.passStreak}</b><span>passes in a row</span></div>
+        </div>
+      ) : (
+        <div class="stats two">
+          <div class="stat"><b>{s.count}</b><span>times done</span></div>
+          <div class="stat"><b>{s.last ? relDate(s.last.date) : '–'}</b><span>last done</span></div>
+        </div>
+      )}
       {s.passStreak >= 2 && (
         <p class="callout good">Two passes in a row — time to take the harder progression or move up a level.</p>
       )}
@@ -103,13 +117,19 @@ export function DrillDetail({ id }: { id: string }) {
                 <div class="row">
                   <div class="row-main">
                     <div class="row-title">
-                      {drill.metrics.filter((m) => m.better !== 'none' || m.sumOf).slice(0, 3).map((m) => {
+                      {drill.metrics.length === 0 && <span class="hv">Done</span>}
+                      {historyMetrics(drill).map((m) => {
                         const v = metricValue(drill, m, r);
                         const par = formatPar(m, v);
                         return <span class="hv">{m.label}: <b>{formatValue(drill, m, v)}</b>{par && <span class={'par ' + (parIsGood(m, v!) ? 'good' : 'bad')}> {par}</span>}</span>;
                       })}
+                      {r.hard && <span class="tag warm">Hard</span>}
                     </div>
-                    <div class="row-sub">{relDate(r.date)}{r.note ? ` · ${r.note}` : ''}</div>
+                    <div class="row-sub">
+                      {relDate(r.date)}
+                      {r.speed ? ` · ${SPEEDS.find((x) => x.id === r.speed)?.label} green` : ''}
+                      {r.note ? ` · ${r.note}` : ''}
+                    </div>
                   </div>
                   {ok !== null && <span class={'badge ' + (ok ? 'good' : 'bad')}>{ok ? 'Pass' : 'Miss'}</span>}
                   <button class="link danger" aria-label="Delete result" onClick={() => confirm('Delete this result?') && actions.deleteResult(r.id)}>✕</button>

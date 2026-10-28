@@ -3,7 +3,7 @@ import { navigate } from '../router';
 import { formatValue, metricValue, newBests, passed, primaryMetric } from '../scoring';
 import { actions, uid, useStore } from '../store';
 import type { Result } from '../types';
-import { Empty, Header } from './common';
+import { Caller, Empty, Header, lastSpeed } from './common';
 import { Markdown } from './Markdown';
 import { ScoreForm } from './ScoreForm';
 
@@ -73,19 +73,22 @@ export function SessionRunner() {
       {drill.summary && <p>{drill.summary}</p>}
       {drill.equipment && <p class="small"><b>Equipment:</b> {drill.equipment}</p>}
 
-      <details class="card">
+      <details class="card" open={drill.metrics.length === 0}>
         <summary>Instructions</summary>
         <Markdown text={drill.content} />
       </details>
 
-      <h2>Your score</h2>
+      {drill.caller && <Caller caller={drill.caller} key={drill.id + index} />}
+
+      <h2>{drill.metrics.length ? 'Your score' : 'When you’re done'}</h2>
       <ScoreForm
         key={drill.id + index}
         drill={drill}
         level={data.settings.level}
+        lastSpeed={lastSpeed(data.results)}
         saveLabel={index + 1 >= session.drillIds.length ? 'Save & finish' : 'Save & next'}
-        onSave={(values, note) => {
-          const r: Result = { id: uid(), drillId: drill.id, date: new Date().toISOString(), values, level: data.settings.level, note: note || undefined, sessionId: session.id };
+        onSave={(values, extras) => {
+          const r: Result = { id: uid(), drillId: drill.id, date: new Date().toISOString(), values, level: data.settings.level, ...extras, sessionId: session.id };
           actions.addResult(r);
           next([...active.resultIds, r.id]);
         }}

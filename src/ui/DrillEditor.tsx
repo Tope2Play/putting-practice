@@ -1,5 +1,6 @@
 import { useState } from 'preact/hooks';
 import { navigate } from '../router';
+import { isComputed } from '../scoring';
 import { actions, uid, useStore } from '../store';
 import { LEVELS, type Drill, type Metric } from '../types';
 import { Empty, Header } from './common';
@@ -44,9 +45,9 @@ function MetricEditor({ m, rounds, onChange, onRemove }: { m: Metric; rounds: nu
         <input class="field-input strong" value={m.label} onInput={(e) => set({ label: val(e) })} placeholder="Name, e.g. Makes" />
         <button type="button" class="link danger" onClick={onRemove}>Remove</button>
       </div>
-      {m.sumOf && <p class="muted small">Calculated automatically as the sum of other scores.</p>}
+      {isComputed(m) && <p class="muted small">Calculated automatically from the other scores.</p>}
       <div class="grid2">
-        {!m.sumOf && (
+        {!isComputed(m) && (
           <Field label="Type">
             <select class="field-input" value={m.kind} onChange={(e) => set({ kind: val(e) as Metric['kind'] })}>
               <option value="count">Whole number</option>
@@ -75,7 +76,7 @@ function MetricEditor({ m, rounds, onChange, onRemove }: { m: Metric; rounds: nu
             </Field>
           </>
         )}
-        {rounds > 1 && !m.sumOf && (
+        {rounds > 1 && !isComputed(m) && (
           <Field label="Rounds combine as">
             <select class="field-input" value={m.aggregate ?? 'sum'} onChange={(e) => set({ aggregate: val(e) as Metric['aggregate'] })}>
               <option value="sum">Total</option>
@@ -112,7 +113,7 @@ export function DrillEditor({ id }: { id?: string }) {
   const set = (patch: Partial<Drill>) => setD({ ...d, ...patch });
   const val = (e: Event) => (e.target as HTMLInputElement).value;
   const cats = [...new Set(drills.map((x) => x.category))];
-  const valid = d.name.trim() && d.metrics.length && d.metrics.every((m) => m.label.trim());
+  const valid = d.name.trim() && d.metrics.every((m) => m.label.trim());
 
   const save = () => {
     // Drop targets left blank and ids of removed metrics from sums.
@@ -121,6 +122,7 @@ export function DrillEditor({ id }: { id?: string }) {
       ...m,
       targets: Object.fromEntries(Object.entries(m.targets ?? {}).filter(([, v]) => v !== undefined && !Number.isNaN(v))),
       sumOf: m.sumOf?.filter((x) => ids.has(x)),
+      calc: m.calc && { ...m.calc, terms: m.calc.terms.filter((t) => ids.has(t.id)) },
     }));
     actions.saveDrill({ ...d, name: d.name.trim(), category: d.category.trim() || 'My drills', metrics });
     navigate(`/drill/${d.id}`, true);
@@ -156,9 +158,10 @@ export function DrillEditor({ id }: { id?: string }) {
       </label>
       <Field label="What it trains"><textarea rows={2} value={d.summary} onInput={(e) => set({ summary: val(e) })} /></Field>
       <Field label="Equipment"><input class="field-input" value={d.equipment} onInput={(e) => set({ equipment: val(e) })} /></Field>
+      <Field label="Hard mode (optional)"><input class="field-input" value={d.hardMode ?? ''} placeholder="e.g. gate at 0.5 m" onInput={(e) => set({ hardMode: val(e) || undefined })} /></Field>
 
       <h2>Scoring</h2>
-      <p class="small muted">What you enter at the end of the drill. The first score with targets is used for the high score and chart.</p>
+      <p class="small muted">What you enter at the end of the drill. The first score with targets is used for the high score and chart. No scores = an unscored warm-up you just mark as done.</p>
       {d.metrics.map((m, i) => (
         <MetricEditor m={m} rounds={d.rounds}
           onChange={(nm) => set({ metrics: d.metrics.map((x, j) => (j === i ? nm : x)) })}
